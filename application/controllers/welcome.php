@@ -21,12 +21,14 @@ class Welcome extends MY_Controller {
         $data['content'] = $this->content_model->get_content($data['menu']);
         $data['captcha'] = $this->captcha_model->initiate_captcha();
         $data['seo_links'] = $this->content_model->get_seo_links();
+        $data['testimonials'] = $this->content_model->get_testimonials();
         foreach ($data['content'] as $row):
 
             $data['title'] = $row->title;
             $data['sidebox'] = $row->sidebox;
             $data['metatitle'] = $row->meta_title;
-            $data['meta_description'] = $row->meta_desc;
+             $data['meta_keywords'] = $row->meta_desc;
+            $data['meta_description'] = $row->meta_keywords;
             $data['slideshow_active'] = $row->slideshow;
         endforeach;
         $data['sidebar'] = "sidebox/side";
@@ -60,12 +62,15 @@ class Welcome extends MY_Controller {
 
         $data['content'] = $this->content_model->get_content($data['menu']);
         $data['captcha'] = $this->captcha_model->initiate_captcha();
+        $data['testimonials'] = $this->content_model->get_testimonials();
         foreach ($data['content'] as $row):
 
             $data['title'] = $row->title;
             $data['sidebox'] = $row->sidebox;
             $data['metatitle'] = $row->meta_title;
-  $data['slideshow_active'] = $row->slideshow;
+            $data['meta_description'] = $row->meta_desc;
+            $data['meta_keywords'] = $row->meta_keywords;
+            $data['slideshow_active'] = $row->slideshow;
         endforeach;
         $data['sidebar'] = "sidebox/side";
         $data['main_content'] = "global/" . $this->config_theme . "/content";
@@ -78,6 +83,13 @@ class Welcome extends MY_Controller {
         }
 
         $data['slideshow'] = 'header/slideshow';
+        $this->load->vars($data);
+        $this->load->view('template/main');
+    }
+
+    function gallery($gallery) {
+        $data['content'] = $this->content_model->get_gallery($gallery);
+        $data['main_content'] = "global/gallery";
         $this->load->vars($data);
         $this->load->view('template/main');
     }
