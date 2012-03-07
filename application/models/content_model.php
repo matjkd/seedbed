@@ -13,8 +13,25 @@ class Content_model extends CI_Model {
 
         $this->db->where('menu', $title);
         $query = $this->db->get('content');
-        if ($query->num_rows == 1)
-            ; {
+        if ($query->num_rows == 1) {
+            return $query->result();
+        }
+    }
+
+    function get_gallery($gallery) {
+
+        $this->db->where('gallery', $gallery);
+        $query = $this->db->get('content');
+        if ($query->num_rows > 0) {
+            return $query->result();
+        }
+    }
+    
+     function get_testimonials() {
+
+        $this->db->where('category', 'testimonial');
+        $query = $this->db->get('content');
+        if ($query->num_rows > 0) {
             return $query->result();
         }
     }
@@ -23,8 +40,7 @@ class Content_model extends CI_Model {
         $this->db->select('menu, title, content_id');
         $this->db->where('category', 'seo');
         $query = $this->db->get('content');
-        if ($query->num_rows > 0)
-            ; {
+        if ($query->num_rows > 0) {
             return $query->result();
         }
     }
@@ -45,9 +61,11 @@ class Content_model extends CI_Model {
         $content_update = array(
             'content' => $this->input->post('content'),
             'menu' => $this->input->post('menu'),
+            'gallery' => $this->input->post('gallery'),
             'title' => $this->input->post('title'),
             'extra' => $this->input->post('extra'),
             'meta_desc' => $this->input->post('meta_desc'),
+             'meta_keywords' => $this->input->post('meta_keywords'),
             'meta_title' => $this->input->post('meta_title'),
             'sidebox' => $this->input->post('sidebox')
         );
@@ -62,8 +80,7 @@ class Content_model extends CI_Model {
 
     function get_all_content() {
         $query = $this->db->get('content');
-        if ($query->num_rows > 0)
-             {
+        if ($query->num_rows > 0) {
             return $query->result();
         }
     }
@@ -72,8 +89,7 @@ class Content_model extends CI_Model {
 
 
         $query = $this->db->get('products');
-        if ($query->num_rows > 0)
-            {
+        if ($query->num_rows > 0) {
             return $query->result();
         }
     }
@@ -129,21 +145,51 @@ class Content_model extends CI_Model {
 
     function add_content() {
 
+        //process menu link
+        $menu_link = $this->input->post('menu');
+        $search = array(" ");
+        $replace = "-";
+        if ($menu_link == NULL) {
+
+            $subject = set_value('title');
+            $menu_link = str_replace($search, $replace, $subject);
+        } else {
+            $subject = $this->input->post('menu');
+            $menu_link = str_replace($search, $replace, $subject);
+        }
+
         // build array for the model
         $name = "" . $this->session->userdata('firstname') . " " . $this->session->userdata('lastname') . "";
-        $format = 'DATE_RFC1123';
+
         $now = time();
         $datetime = $now;
         $form_data = array(
             'title' => set_value('title'),
             'content' => $this->input->post('content'),
-            'menu' => $this->input->post('menu'),
+            'menu' => $menu_link,
             'category' => set_value('category'),
             'added_by' => $name,
+            'gallery' => $this->input->post('gallery'),
             'date_added' => $datetime
         );
         $insert = $this->db->insert('content', $form_data);
         return $insert;
+    }
+
+    /**
+     *
+     * @param type $filename
+     * @param type $blog_id
+     * @return type 
+     */
+    function add_file($filename, $blog_id) {
+        $content_update = array(
+            'news_image' => $filename
+        );
+
+        $this->db->where('content_id', $blog_id);
+        $update = $this->db->update('content', $content_update);
+        return $update;
     }
 
 }
