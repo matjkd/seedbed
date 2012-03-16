@@ -6,49 +6,134 @@
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
     <head>
 
-        <?= $this->load->view('template/seedbed/header') ?>
+        <?= $this->load->view('template/' . $this->config_theme . '/header') ?>
 
     </head>
 
-<body>
+    <body>
 
 
 
-	<!-- Primary Page Layout
-	================================================== -->
+        <!-- Primary Page Layout
+        ================================================== -->
 
-	<!-- Delete everything in this .container and get started on your own site! -->
+        <!-- Delete everything in this .container and get started on your own site! -->
+        <div id="top_heading">
+            <div class="container">
+                <div class="sixteen columns" >
+                    <h2 class="remove-bottom" >Loughton Seedbed Centre</h2>
 
-	<div class="container">
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px">Skeleton</h1>
-			<h5>Version 1.1</h5>
-			<hr />
-		</div>
-		<div class="one-third column">
-			<h3>About Skeleton?</h3>
-			<p>Skeleton is a small collection of well-organized CSS &amp; JS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. It's based on a responsive grid, but also provides very basic CSS for typography, buttons, tabs, forms and media queries. Go ahead, resize this super basic page to see the grid in action.</p>
-		</div>
-		<div class="one-third column">
-			<h3>Three Core Principles</h3>
-			<p>Skeleton is built on three core principles:</p>
-			<ul class="square">
-				<li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
-				<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
-				<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
-			</ul>
-		</div>
-		<div class="one-third column">
-			<h3>Docs &amp; Support</h3>
-			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
-		</div>
+                </div>
+            </div>
+        </div>
 
-	</div><!-- container -->
+        <div class="big_menu">
+            <div class="container">
+
+                <div class="four columns"><img id="headerimage" src="<?= base_url() ?>images/photos/unit1.jpg"/></div>
+                <div class="four columns"><img id="headerimage" src="<?= base_url() ?>images/photos/unit2.jpg"/></div>
+                <div class="eight columns" id="headertext"><img src="<?= base_url() ?>images/titles/seedbed/big_heading.png"> </div>
 
 
-     <?= $this->load->view('template/seedbed/footer') ?>
-	
-<!-- End Document
-================================================== -->
-</body>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="sixteen columns mainheading"  >
+                <h2>Centre for small businesses</h2>
+            </div>
+            <div class="eight columns" id="bluebox">
+                <div id="bluebox_content">
+
+                    <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/unit.png"/></div>
+
+                    <div class="blue_text">
+                        <h4>Welcome</h4>
+                        <p>Our site is currently being redesigned. Please check back soon, or contact us using the details below</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="eight columns" id="bluebox">
+                <div id="bluebox_content">
+                    <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/roundarrow.png"/></div>
+                    <div class="blue_text">
+                        <h4>Easy In Easy Out</h4>
+                        <p>Monthly ‘Easy In Easy Out’ licence. Contact us for more info.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="sixteen columns mainheading"  >
+                <h2>Facilities and Benefits</h2>
+            </div>
+            <div class="eight columns">
+
+                <p>The Loughton Seedbed Centre offers the small business or a person embarking on a business venture, 
+                    high quality modern accommodation with the use of technical facilities and administrative back up
+                    on a monthly ‘Easy In Easy Out’ licence basis.</p>
+
+                <p>Security, insurance, repairs and utilities are included with the cost shared between
+                    occupants to create an affordable and supported environment with permanent on 
+                    site staff assistance and telephone answering.
+                </p>
+            </div>
+
+
+            <div class="four columns">
+
+                
+                <p><strong>EFI (Loughton) Ltd</strong><br/>
+                    The Loughton Seedbed Centre<br/>
+                    Langston Road<br/>
+                    Loughton<br/>
+                    Essex<br/>
+                    IG10 3TQ<br/><br/>
+
+
+            </div>
+
+            <div class="four columns">
+
+                <p>
+
+                    Tel No: 020 8787 7000<br/>
+                    Fax No: 020 8787 7003<br/>
+                    Email:  <a href="mailto:info@seedbedloughton.com">info@seedbedloughton.com</a></p>
+            </div>
+
+
+        </div><!-- container -->
+        <div class="sixteen columns" id="footerblock">
+            <div class="container">
+                <div class="four columns">
+  &nbsp;
+                </div>
+                <div class="twelve columns">
+
+                    &nbsp;
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+        <?= $this->load->view('template/' . $this->config_theme . '/footer') ?>
+
+        <!-- End Document
+        ================================================== -->
+    </body>
 </html>

@@ -29,6 +29,8 @@
     /* Nested Column Classes */
     .column.alpha, .columns.alpha               { margin-left: 0; }
     .column.omega, .columns.omega               { margin-right: 0; }
+    
+      #headertext { height:155px;}
 
     /* Base Grid */
     .container .one.column,
@@ -83,6 +85,8 @@
         .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
         .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
         .alpha.omega                                { margin-left: 0; margin-right: 0; }
+        
+        #headerimage {display:none;}
 
         .container .one.column,
         .container .one.columns                     { width: 28px; }
@@ -133,7 +137,8 @@
         .container { width: 300px; }
         .container .columns,
         .container .column { margin: 0; }
-
+    #headertext { height:200px;}
+         #headerimage {display:none;}
         .container .one.column,
         .container .one.columns,
         .container .two.columns,
@@ -184,6 +189,8 @@
         .container .columns,
         .container .column { margin: 0; }
 
+        #headertext { height:155px;}
+         #headerimage {display:none;}
         .container .one.column,
         .container .one.columns,
         .container .two.columns,

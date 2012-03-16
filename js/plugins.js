@@ -1675,11 +1675,11 @@
                                   })
                                   .appendTo(container);
                  
-                // Append the container to the body, if it's not already there
-                if($("body #backstretch").length == 0) {
-                    $("body").append(container);
-                }
-                
+//                // Append the container to the body, if it's not already there
+//                if($("body #backstretch").length == 0) {
+//                    $("body").append(container);
+//                }
+//                
                 // Attach the settings
                 container.data("settings", settings);
                     

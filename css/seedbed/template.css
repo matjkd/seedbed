@@ -1,0 +1,160 @@
+/* 
+    Document   : template
+    Created on : 07-Mar-2012, 14:51:17
+    Author     : mat
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+body {
+
+    background:url('background/grad_background.jpg') repeat-x #a5c1cb;
+}
+
+
+root { 
+    display: block;
+}
+
+.container {
+
+}
+
+.mainheading {
+   margin-top:15px;
+    background:#1f313f;
+    margin-bottom:15px;
+   
+}
+.mainheading h2{
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:#007eff;
+    margin-bottom:0px;
+}
+
+.big_menu {
+    width:100%;
+    display:block;
+    position: relative;
+   
+    background:url('background/headerback3.jpg') #1d5b6a;
+    height:100%;
+    margin-left:0px;
+    padding-top:30px;
+    padding-bottom:15px;
+    
+}
+#headertext {
+     
+    background:#121c24;
+    color:#fff;
+    -moz-box-shadow: 3px 3px 12px #000000;
+-webkit-box-shadow: 3px 3px 12px #000000;
+box-shadow: 3px 3px 12px #000000;
+   
+}
+#headerimage {
+    -moz-box-shadow: 3px 3px 12px #000000;
+-webkit-box-shadow: 3px 3px 12px #000000;
+box-shadow: 3px 3px 12px #000000;
+}
+
+#bluebox {
+    background-color: #007eff;
+    color:#fff;
+   height:100px;
+    margin-bottom:5px;
+
+}
+
+#bluebox_content {
+    padding:10px;
+}
+
+.blue_logo {
+    display:block;
+    float:left;
+}
+.blue_text {
+    position:relative;
+    width:270px;
+     display:block;
+    float:left;
+    padding-left:5px;
+}
+.blue_text h4 {
+    color:#fff;
+line-height:23px;
+}
+
+#headertext img {
+    
+    width: 88.9%;
+    color:#fff;
+    padding:10px;
+}
+.big_menu h1 {
+    text-align: center;
+    display:block;
+    position: relative;
+    color:#62b8c0;
+}
+.big_menu a{
+   text-decoration: none;
+    color:#62b8c0;
+}
+#big_heading {
+     width:100%;
+    display:block;
+    position: relative;
+    background-color: #141414;
+    height:100%;
+    margin-left:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#big_heading h2 {
+    font-size:30px;
+    color:#1f5c6c;
+}
+
+#top_heading {
+     width:100%;
+    display:block;
+    position: relative;
+    color:#ffffff;
+ background-color: #1f313f;
+    height:100%;
+    margin-left:0px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-bottom:25px solid #121c24;
+   
+}
+#top_heading h2 {
+      color:#ffffff;
+      font-weight: normal;
+  
+}
+
+#footerblock {
+    width:100%;
+        display:block;
+    position: relative;
+    color:#ffffff;
+ background-color: #1f313f;
+ height:100%;
+ margin-left:0px;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+#footerblock h3{
+    color: #007eff;
+}
+

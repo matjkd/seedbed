@@ -36,7 +36,7 @@ speedIn:  2000,
 $('.slideshow').css("display", "block");
 });
        
-  $.backstretch("https://s3-eu-west-1.amazonaws.com/grandgardendesigns/background.jpg");
+ $.backstretch("https://s3-eu-west-1.amazonaws.com/grandgardendesigns/background.jpg");
 
 // catch all document.write() calls
 (function(doc){
