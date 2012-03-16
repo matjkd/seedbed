@@ -113,10 +113,10 @@
         </div><!-- container -->
         <div class="sixteen columns" id="footerblock">
             <div class="container">
-                <div class="four columns">
-  &nbsp;
+                <div class="eight columns">
+Site being developed by <a href="http://www.redstudio.co.uk">redstudio design limited</a>
                 </div>
-                <div class="twelve columns">
+                <div class="eight columns">
 
                     &nbsp;
 
