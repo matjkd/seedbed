@@ -1,7 +1,7 @@
 <!-- JS
 	================================================== -->
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="javascripts/tabs.js"></script>
+	<script src="<?=base_url()?>js/tabs.js"></script>
 
   
    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>

@@ -25,10 +25,10 @@ root {
 }
 
 .mainheading {
-   margin-top:15px;
+    margin-top:8px;
     background:#1f313f;
-    margin-bottom:15px;
-   
+    margin-bottom:8px;
+
 }
 .mainheading h2{
     padding-left:10px;
@@ -42,35 +42,36 @@ root {
     width:100%;
     display:block;
     position: relative;
-   
+
     background:url('background/headerback3.jpg') #1d5b6a;
     height:100%;
     margin-left:0px;
-    padding-top:30px;
+    padding-top:50px;
     padding-bottom:15px;
-    
+
 }
 #headertext {
-     
+
     background:#121c24;
     color:#fff;
     -moz-box-shadow: 3px 3px 12px #000000;
--webkit-box-shadow: 3px 3px 12px #000000;
-box-shadow: 3px 3px 12px #000000;
-   
+    -webkit-box-shadow: 3px 3px 12px #000000;
+    box-shadow: 3px 3px 12px #000000;
+
 }
 #headerimage {
     -moz-box-shadow: 3px 3px 12px #000000;
--webkit-box-shadow: 3px 3px 12px #000000;
-box-shadow: 3px 3px 12px #000000;
+    -webkit-box-shadow: 3px 3px 12px #000000;
+    box-shadow: 3px 3px 12px #000000;
 }
 
-#bluebox {
+.bluebox {
     background-color: #007eff;
     color:#fff;
-   height:100px;
-    margin-bottom:5px;
-
+    height:100px;
+    margin-bottom:8px;
+    margin-top:8px;
+position:relative;
 }
 
 #bluebox_content {
@@ -80,21 +81,34 @@ box-shadow: 3px 3px 12px #000000;
 .blue_logo {
     display:block;
     float:left;
+    width:35px;
 }
 .blue_text {
     position:relative;
-    width:270px;
-     display:block;
+    width:150px;
+    display:block;
     float:left;
-    padding-left:5px;
+    padding-left:10px;
 }
 .blue_text h4 {
     color:#fff;
-line-height:23px;
+    line-height:23px;
+}
+
+.clickhere {
+    
+    display:none;
+    position:absolute;
+    bottom:0px;
+   padding-left:55px;
+}
+.clickhere a {
+    text-decoration: none;
+    color:#ffffff;
 }
 
 #headertext img {
-    
+
     width: 88.9%;
     color:#fff;
     padding:10px;
@@ -106,11 +120,11 @@ line-height:23px;
     color:#62b8c0;
 }
 .big_menu a{
-   text-decoration: none;
+    text-decoration: none;
     color:#62b8c0;
 }
 #big_heading {
-     width:100%;
+    width:100%;
     display:block;
     position: relative;
     background-color: #141414;
@@ -125,32 +139,105 @@ line-height:23px;
 }
 
 #top_heading {
-     width:100%;
+    width:100%;
     display:block;
     position: relative;
     color:#ffffff;
- background-color: #1f313f;
-    height:100%;
+    background-color: #1f313f;
+    height:45px;
     margin-left:0px;
     padding-top:10px;
     padding-bottom:10px;
-    border-bottom:25px solid #121c24;
-   
-}
-#top_heading h2 {
-      color:#ffffff;
-      font-weight: normal;
-  
+
+
+    z-index:2000;
+
 }
 
+.nav {
+    display:block;
+    position: absolute;
+   
+    background-color:#121c24;
+    width:100%;
+    height:35px;
+    z-index:1500;
+    -moz-box-shadow: 0px 0px 12px #000000;
+    -webkit-box-shadow: 0px 0px 12px #000000;
+    box-shadow: 0px 0px 12px #000000;
+}
+.sticky {
+    position:fixed;
+    top:0;
+
+}
+#menutop {
+
+    width:100%;
+    height:31px;
+    text-align: left;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 12px;
+   
+    padding-left: 0px;
+    border-top: solid 0px #4a5b63;
+    line-height:31px;;
+
+
+   
+    display:block;
+    position:relative;
+}
+#menutop ul {
+
+    margin-right:auto;
+    margin-left:auto;
+}
+#menutop li {
+    display:inline;
+    padding-right:14px;
+}
+
+#menutop a {
+    text-decoration:none;
+    color: #ffffff;
+}
+#top_heading h2 {
+    color:#ffffff;
+    font-weight: normal;
+
+}
+
+
+
+
+.feature_box {
+    float:left;
+    width: 220px;
+    color:#fff;
+    height:100px;
+    margin-bottom:8px;
+    margin-top:8px;
+    background-color: #5687b5;
+
+}
+.features {
+
+    background-color: #5687b5;
+    margin-bottom:8px;
+    
+
+}
 #footerblock {
     width:100%;
-        display:block;
+    display:block;
     position: relative;
     color:#ffffff;
- background-color: #1f313f;
- height:100%;
- margin-left:0px;
+    background-color: #1f313f;
+    height:100%;
+    margin-left:0px;
     padding-top:10px;
     padding-bottom:10px;
 }

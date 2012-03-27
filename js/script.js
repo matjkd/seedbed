@@ -28,15 +28,15 @@ window.log = function(){
 
 $(document).ready(function() {
     $('.slideshow').cycle({
-speedIn:  2000,
-	    speedOut: 2000,
-	   timeout:   10000,
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-	});
-$('.slideshow').css("display", "block");
+        speedIn:  2000,
+        speedOut: 2000,
+        timeout:   10000,
+        fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+    });
+    $('.slideshow').css("display", "block");
 });
        
- $.backstretch("https://s3-eu-west-1.amazonaws.com/grandgardendesigns/background.jpg");
+$.backstretch("https://s3-eu-west-1.amazonaws.com/grandgardendesigns/background.jpg");
 
 // catch all document.write() calls
 (function(doc){
@@ -55,14 +55,7 @@ jQuery(function() {
     jQuery('.wymeditor').wymeditor();
 });
 
-$("#title h2").hover(
-  function () {
-    $(this).css('color', '#000000');
-  },
-   function () {
-   $(this).css('color', '#319825');
-  }
-);
+
 
 
 
@@ -215,4 +208,102 @@ $(document).ready(function() {
     });
 
 
+});
+
+
+$(document).ready(function() {
+    
+    
+    /*************************************************
+    /*    blue button hover
+    /***********************************************/
+    $(".bluebox").hover(
+        function() {
+        
+            $(this).stop().animate({
+                backgroundColor:"#51a5fc",
+                height: '116px',
+                marginBottom: 0,
+                marginTop: 0
+            },
+            150
+            );
+               
+            $(this).find('.clickhere').fadeIn(100);        
+        },
+        function() {
+        
+            $(this).stop().animate({
+                backgroundColor:"#077eff",
+                height: '100px',
+                marginBottom: 8,
+                marginTop: 8
+            
+            },
+            150
+            );
+            $(".clickhere").fadeOut(100);
+        }
+        );
+            
+               
+    /*************************************************
+    /*    feature box hover
+    /***********************************************/
+    $(".feature_box").hover(
+        function() {
+        
+            $(this).stop().animate({
+                backgroundColor:"#51a5fc"
+              
+             
+            },
+            150
+            );
+               
+            $(this).find('.clickhere').fadeIn(100);        
+        },
+        function() {
+        
+            $(this).stop().animate({
+                backgroundColor:"#5687b5"
+               
+               
+            
+            },
+            150
+            );
+            $(".clickhere").fadeOut(100);
+        }
+        );
+            
+  
+            
+             
+    /*****************************************
+  /* Sticky Nav and Nav Updating
+  /****************************************/
+
+    var navPos = $('.nav').offset().top;
+
+    $(window).on('scroll', function(evt) {
+        var scrollTop = $(this).scrollTop()
+        winHeight = $(window).height();
+
+        window.clearTimeout(window.timeout);
+
+        window.timeout = setTimeout(function() {
+            // Set the sticky nav
+            if (scrollTop > navPos) {
+                $('.nav').not('.sticky').addClass('sticky');
+            } else {
+                $('.nav.sticky').removeClass('sticky');
+            }
+
+  
+        }, 10);
+    });
+
+    
+    
 });

@@ -40,17 +40,17 @@
 
 $route['default_controller'] = "welcome";
 $route['about'] = '/welcome/home';
-$route['menu'] = 'menus/list_menus';
-$route['gallery'] = '/welcome/home';
-$route['events'] = '/welcome/home';
+$route['tenants'] = '/welcome/home';
+$route['mailbox'] = '/welcome/home';
+$route['map'] = '/welcome/home';
 $route['contact'] = '/welcome/home';
-$route['social'] = '/welcome/home';
-$route['testimonials'] = '/welcome/home';
+$route['spaces'] = '/welcome/home';
+$route['voffice'] = '/welcome/home';
 $route['login'] = '/welcome/login';
-$route['charity'] = '/welcome/home';
+$route['othersites'] = '/welcome/home';
 $route['services'] = '/welcome/home';
 $route['design'] = '/welcome/home';
-$route['print'] = '/welcome/home';
+$route['news'] = '/welcome/home';
 $route['404_override'] = '';
 
 

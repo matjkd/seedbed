@@ -12,6 +12,8 @@
 
     <body>
 
+        <!--   hidden input to pass base url to js files-->
+        <input type="hidden" id="baseurl" value="<?= base_url() ?>"/>
 
 
         <!-- Primary Page Layout
@@ -21,7 +23,17 @@
         <div id="top_heading">
             <div class="container">
                 <div class="sixteen columns" >
-                    <h2 class="remove-bottom" >Loughton Seedbed Centre</h2>
+                    <h2 class="remove-bottom" ><img src="<?=base_url()?>images/titles/logo.png"/></h2>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="nav">
+            <div class="container">
+                <div class="sixteen columns" id="menutop">
+                    <?= $this->load->view('global/seedbed/menu') ?>
 
                 </div>
             </div>
@@ -39,57 +51,62 @@
         </div>
 
         <div class="container">
-            <div class="sixteen columns mainheading"  >
-                <h2>Centre for small businesses</h2>
-            </div>
-            <div class="eight columns" id="bluebox">
-                <div id="bluebox_content">
-
-                    <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/unit.png"/></div>
-
-                    <div class="blue_text">
-                        <h4>Welcome</h4>
-                        <p>Our site is currently being redesigned. Please check back soon, or contact us using the details below</p>
-                    </div>
-                </div>
-
-            </div>
 
 
-            <div class="eight columns" id="bluebox">
-                <div id="bluebox_content">
-                    <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/roundarrow.png"/></div>
-                    <div class="blue_text">
-                        <h4>Easy In Easy Out</h4>
-                        <p>Monthly ‘Easy In Easy Out’ licence. Contact us for more info.</p>
-                    </div>
-                </div>
-
-            </div>
-
-
+            <!--add top section here-->
+            <?php
+            if (isset($topsection) && $topsection != NULL) {
+                $this->load->view($topsection);
+            }
+            ?>
 
 
 
             <div class="sixteen columns mainheading"  >
-                <h2>Facilities and Benefits</h2>
+                <h2>
+                    <?php
+                    if (isset($title)) {
+                        echo $title;
+                    }
+                    ?>
+                </h2>
             </div>
+
+            <!--   set size of columns. -->
+            <?php
+            if (!isset($mainsize) || $mainsize == NULL) {
+                $mainsize = "twelve";
+            }
+            if (!isset($rightsize) || $rightsize == NULL) {
+                $rightsize = "four";
+            }
+            ?>
+
+            <div class="<?= $mainsize ?> columns">
+
+            <?= $this->load->view($main_content)
+            ?>   
+        </div>
+
+        <div class="<?= $rightsize ?> columns features"  >  
+            <?php
+            if (isset($sidebox) && $sidebox != NULL) {
+            $this->load->view($sidebox);
+        }
+        ?>
+        </div>
+
+    </div><!-- container -->
+    <div class="sixteen columns" id="footerblock">
+        <div class="container">
             <div class="eight columns">
-
-                <p>The Loughton Seedbed Centre offers the small business or a person embarking on a business venture, 
-                    high quality modern accommodation with the use of technical facilities and administrative back up
-                    on a monthly ‘Easy In Easy Out’ licence basis.</p>
-
-                <p>Security, insurance, repairs and utilities are included with the cost shared between
-                    occupants to create an affordable and supported environment with permanent on 
-                    site staff assistance and telephone answering.
-                </p>
+                Site being developed by <a href="http://www.redstudio.co.uk">redstudio design limited</a>
             </div>
 
 
             <div class="four columns">
 
-                
+
                 <p><strong>EFI (Loughton) Ltd</strong><br/>
                     The Loughton Seedbed Centre<br/>
                     Langston Road<br/>
@@ -110,30 +127,19 @@
             </div>
 
 
-        </div><!-- container -->
-        <div class="sixteen columns" id="footerblock">
-            <div class="container">
-                <div class="eight columns">
-Site being developed by <a href="http://www.redstudio.co.uk">redstudio design limited</a>
-                </div>
-                <div class="eight columns">
-
-                    &nbsp;
-
-                </div>
-
-
-            </div>
 
 
         </div>
 
 
+    </div>
 
 
-        <?= $this->load->view('template/' . $this->config_theme . '/footer') ?>
 
-        <!-- End Document
-        ================================================== -->
-    </body>
+
+<?= $this->load->view('template/' . $this->config_theme . '/footer') ?>
+
+    <!-- End Document
+    ================================================== -->
+</body>
 </html>
