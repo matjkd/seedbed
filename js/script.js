@@ -95,8 +95,36 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
+
     
+    
+/*************************************************
+    /*    fix background width
+    /***********************************************/
+$(document).ready(function() {
+    var windowwidth = $(window).width(),
+    contenttop = $('#contenttop').offset().top,
+    adjustment = contenttop - 100,
+    filleradjust =  contenttop + 100;
+   
+  
+    $('#fullbackground img').css("width", windowwidth);
+    $('#whitefade').css("top", adjustment);
+    $('#whitefadefiller').css("top", filleradjust);
+    $('#fullbackground').fadeIn();
+});
+    
+$(window).resize(function() {
+    var windowwidth = $(window).width();
+    $('#fullbackground img').css("width", windowwidth);
+});
+
+
+
+
+ 
+    
+$(document).ready(function() {   
     
     /*************************************************
     /*    blue button hover
@@ -213,21 +241,27 @@ $(document).ready(function() {
     /* Scroll to 
      /****************************************/
     $('.feature_box a').on('click', function(evt) {
-        $.scrollTo($(this).attr('href'), 800, {offset:-40});
+        $.scrollTo($(this).attr('href'), 800, {
+            offset:-40
+        });
     
         return false;
    
     });
     
     $('.services_box a').on('click', function(evt) {
-        $.scrollTo($(this).attr('href'), 800, {offset:-40});
+        $.scrollTo($(this).attr('href'), 800, {
+            offset:-40
+        });
       
         return false;
    
   
     });
-     $('.service a').on('click', function(evt) {
-        $.scrollTo($(this).attr('href'), 800, {offset:-40});
+    $('.service a').on('click', function(evt) {
+        $.scrollTo($(this).attr('href'), 800, {
+            offset:-40
+        });
       
         return false;
    
@@ -238,57 +272,79 @@ $(document).ready(function() {
     /* Central Services rollovers
      /****************************************/
     
-     $('.services').mouseenter(function() {
+    $('.services').mouseenter(function() {
            
-             $(this).stop().animate({
-                backgroundColor:"#51a5fc"
+        $(this).stop().animate({
+            backgroundColor:"#51a5fc"
               
              
-            },
-            150
-            );
+        },
+        150
+        );
          
              
         
            
-        });
-        $('.services').click(function() {
-             var serviceid = "#box_" +$(this).attr('id');
+    });
+    $('.services').click(function() {
+        var serviceid = "#box_" +$(this).attr('id');
             
-                $(".service").stop().animate({
-                backgroundColor:"#5687B5"
+        $(".service").stop().animate({
+            backgroundColor:"#5687B5"
               
              
-            },
-            150
-            );
-                $(serviceid).stop().animate({
-                backgroundColor:"#51a5fc"
+        },
+        150
+        );
+        $(serviceid).stop().animate({
+            backgroundColor:"#51a5fc"
               
              
-            },
-            150
-            );
+        },
+        150
+        );
         
            
-        });
+    });
+         
          
      
          
                
-        $('.services').mouseleave(function() {
+    $('.services').mouseleave(function() {
             
-              $(this).stop().animate({
-                backgroundColor:"#077eff"
+        $(this).stop().animate({
+            backgroundColor:"#077eff"
               
              
-            },
-            150
-            );
+        },
+        150
+        );
   
                
-        });
+    });
     
+    
+     $('.service').click(function() {
+       
+            
+        $(".service").stop().animate({
+            backgroundColor:"#5687B5"
+              
+             
+        },
+        150
+        );
+        $(this).stop().animate({
+            backgroundColor:"#51a5fc"
+              
+             
+        },
+        150
+        );
+        
+           
+    });
     
   
     

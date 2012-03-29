@@ -35,7 +35,7 @@ class Welcome extends MY_Controller {
             $data['message'] = $this->session->flashdata('message');
         }
 
-        $data['slideshow'] = 'header/slideshow';
+      
         $this->load->vars($data);
         $this->load->view('template/main');
     }
@@ -53,6 +53,7 @@ class Welcome extends MY_Controller {
             $data['slideshow_active'] = $row->slideshow;
             $data['mainsize'] = $row->mainsize;
             $data['rightsize'] = $row->rightsize;
+            $data['slideshow'] = $row->slideshow;
 
         endforeach;
         $this->load->vars($data);
@@ -88,7 +89,7 @@ class Welcome extends MY_Controller {
             $data['message'] = $this->session->flashdata('message');
         }
 
-        $data['slideshow'] = 'header/slideshow';
+     
         $this->load->vars($data);
         $this->load->view('template/main');
     }
@@ -120,7 +121,7 @@ class Welcome extends MY_Controller {
             $data['message'] = $this->session->flashdata('message');
         }
 
-        $data['slideshow'] = 'header/slideshow';
+      
         $this->load->vars($data);
         $this->load->view('template/main');
     }
@@ -132,7 +133,7 @@ class Welcome extends MY_Controller {
         $id = 'login';
         $data['content'] = $this->content_model->get_content($id);
         $data['main_content'] = "user/login_form";
-        $data['title'] = "Login to Eagle";
+        $data['title'] = "Login";
 
         $data['page'] = "login";
         $this->load->vars($data);
