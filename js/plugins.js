@@ -1,4 +1,120 @@
 
+/**
+ * --------------------------------------------------------------------
+ * jQuery-Plugin "pngFix"
+ * Version: 1.2, 09.03.2009
+ * by Andreas Eberhard, andreas.eberhard@gmail.com
+ *                      http://jquery.andreaseberhard.de/
+ *
+ * Copyright (c) 2007 Andreas Eberhard
+ * Licensed under GPL (http://www.opensource.org/licenses/gpl-license.php)
+ *
+ * Changelog:
+ *    09.03.2009 Version 1.2
+ *    - Update for jQuery 1.3.x, removed @ from selectors
+ *    11.09.2007 Version 1.1
+ *    - removed noConflict
+ *    - added png-support for input type=image
+ *    - 01.08.2007 CSS background-image support extension added by Scott Jehl, scott@filamentgroup.com, http://www.filamentgroup.com
+ *    31.05.2007 initial Version 1.0
+ * --------------------------------------------------------------------
+ * @example $(function(){$(document).pngFix();});
+ * @desc Fixes all PNG's in the document on document.ready
+ *
+ * jQuery(function(){jQuery(document).pngFix();});
+ * @desc Fixes all PNG's in the document on document.ready when using noConflict
+ *
+ * @example $(function(){$('div.examples').pngFix();});
+ * @desc Fixes all PNG's within div with class examples
+ *
+ * @example $(function(){$('div.examples').pngFix( { blankgif:'ext.gif' } );});
+ * @desc Fixes all PNG's within div with class examples, provides blank gif for input with png
+ * --------------------------------------------------------------------
+ */
+
+(function($) {
+
+    jQuery.fn.pngFix = function(settings) {
+
+        // Settings
+        settings = jQuery.extend({
+            blankgif: 'blank.gif'
+        }, settings);
+
+        var ie55 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 5.5") != -1);
+        var ie6 = (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion) == 4 && navigator.appVersion.indexOf("MSIE 6.0") != -1);
+
+        if (jQuery.browser.msie && (ie55 || ie6)) {
+
+            //fix images with png-source
+            jQuery(this).find("img[src$=.png]").each(function() {
+
+                jQuery(this).attr('width',jQuery(this).width());
+                jQuery(this).attr('height',jQuery(this).height());
+
+                var prevStyle = '';
+                var strNewHTML = '';
+                var imgId = (jQuery(this).attr('id')) ? 'id="' + jQuery(this).attr('id') + '" ' : '';
+                var imgClass = (jQuery(this).attr('class')) ? 'class="' + jQuery(this).attr('class') + '" ' : '';
+                var imgTitle = (jQuery(this).attr('title')) ? 'title="' + jQuery(this).attr('title') + '" ' : '';
+                var imgAlt = (jQuery(this).attr('alt')) ? 'alt="' + jQuery(this).attr('alt') + '" ' : '';
+                var imgAlign = (jQuery(this).attr('align')) ? 'float:' + jQuery(this).attr('align') + ';' : '';
+                var imgHand = (jQuery(this).parent().attr('href')) ? 'cursor:hand;' : '';
+                if (this.style.border) {
+                    prevStyle += 'border:'+this.style.border+';';
+                    this.style.border = '';
+                }
+                if (this.style.padding) {
+                    prevStyle += 'padding:'+this.style.padding+';';
+                    this.style.padding = '';
+                }
+                if (this.style.margin) {
+                    prevStyle += 'margin:'+this.style.margin+';';
+                    this.style.margin = '';
+                }
+                var imgStyle = (this.style.cssText);
+
+                strNewHTML += '<span '+imgId+imgClass+imgTitle+imgAlt;
+                strNewHTML += 'style="position:relative;white-space:pre-line;display:inline-block;background:transparent;'+imgAlign+imgHand;
+                strNewHTML += 'width:' + jQuery(this).width() + 'px;' + 'height:' + jQuery(this).height() + 'px;';
+                strNewHTML += 'filter:progid:DXImageTransform.Microsoft.AlphaImageLoader' + '(src=\'' + jQuery(this).attr('src') + '\', sizingMethod=\'scale\');';
+                strNewHTML += imgStyle+'"></span>';
+                if (prevStyle != ''){
+                    strNewHTML = '<span style="position:relative;display:inline-block;'+prevStyle+imgHand+'width:' + jQuery(this).width() + 'px;' + 'height:' + jQuery(this).height() + 'px;'+'">' + strNewHTML + '</span>';
+                }
+
+                jQuery(this).hide();
+                jQuery(this).after(strNewHTML);
+
+            });
+
+            // fix css background pngs
+            jQuery(this).find("*").each(function(){
+                var bgIMG = jQuery(this).css('background-image');
+                if(bgIMG.indexOf(".png")!=-1){
+                    var iebg = bgIMG.split('url("')[1].split('")')[0];
+                    jQuery(this).css('background-image', 'none');
+                    jQuery(this).get(0).runtimeStyle.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + iebg + "',sizingMethod='scale')";
+                }
+            });
+		
+            //fix input with png-source
+            jQuery(this).find("input[src$=.png]").each(function() {
+                var bgIMG = jQuery(this).attr('src');
+                jQuery(this).get(0).runtimeStyle.filter = 'progid:DXImageTransform.Microsoft.AlphaImageLoader' + '(src=\'' + bgIMG + '\', sizingMethod=\'scale\');';
+                jQuery(this).attr('src', settings.blankgif)
+            });
+	
+        }
+	
+        return jQuery;
+
+    };
+
+
+
+
+})(jQuery);
 /*!
  * jQuery Cycle Plugin (with Transition Definitions)
  * Examples and documentation at: http://jquery.malsup.com/cycle/
@@ -1720,3 +1836,16 @@
     };
   
 })(jQuery);
+
+
+/**
+ * jQuery.ScrollTo - Easy element scrolling using jQuery.
+ * Copyright (c) 2007-2009 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
+ * Dual licensed under MIT and GPL.
+ * Date: 5/25/2009
+ * @author Ariel Flesler
+ * @version 1.4.2
+ *
+ * http://flesler.blogspot.com/2007/10/jqueryscrollto.html
+ */
+;(function(d){var k=d.scrollTo=function(a,i,e){d(window).scrollTo(a,i,e)};k.defaults={axis:'xy',duration:parseFloat(d.fn.jquery)>=1.3?0:1};k.window=function(a){return d(window)._scrollable()};d.fn._scrollable=function(){return this.map(function(){var a=this,i=!a.nodeName||d.inArray(a.nodeName.toLowerCase(),['iframe','#document','html','body'])!=-1;if(!i)return a;var e=(a.contentWindow||a).document||a.ownerDocument||a;return d.browser.safari||e.compatMode=='BackCompat'?e.body:e.documentElement})};d.fn.scrollTo=function(n,j,b){if(typeof j=='object'){b=j;j=0}if(typeof b=='function')b={onAfter:b};if(n=='max')n=9e9;b=d.extend({},k.defaults,b);j=j||b.speed||b.duration;b.queue=b.queue&&b.axis.length>1;if(b.queue)j/=2;b.offset=p(b.offset);b.over=p(b.over);return this._scrollable().each(function(){var q=this,r=d(q),f=n,s,g={},u=r.is('html,body');switch(typeof f){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(f)){f=p(f);break}f=d(f,this);case'object':if(f.is||f.style)s=(f=d(f)).offset()}d.each(b.axis.split(''),function(a,i){var e=i=='x'?'Left':'Top',h=e.toLowerCase(),c='scroll'+e,l=q[c],m=k.max(q,i);if(s){g[c]=s[h]+(u?0:l-r.offset()[h]);if(b.margin){g[c]-=parseInt(f.css('margin'+e))||0;g[c]-=parseInt(f.css('border'+e+'Width'))||0}g[c]+=b.offset[h]||0;if(b.over[h])g[c]+=f[i=='x'?'width':'height']()*b.over[h]}else{var o=f[h];g[c]=o.slice&&o.slice(-1)=='%'?parseFloat(o)/100*m:o}if(/^\d+$/.test(g[c]))g[c]=g[c]<=0?0:Math.min(g[c],m);if(!a&&b.queue){if(l!=g[c])t(b.onAfterFirst);delete g[c]}});t(b.onAfter);function t(a){r.animate(g,j,b.easing,a&&function(){a.call(this,n,b)})}}).end()};k.max=function(a,i){var e=i=='x'?'Width':'Height',h='scroll'+e;if(!d(a).is('html,body'))return a[h]-d(a)[e.toLowerCase()]();var c='client'+e,l=a.ownerDocument.documentElement,m=a.ownerDocument.body;return Math.max(l[h],m[h])-Math.min(l[c],m[c])};function p(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);

@@ -87,6 +87,7 @@
             <?= $this->load->view($main_content)
             ?>   
         </div>
+            
 
         <div class="<?= $rightsize ?> columns features"  >  
             <?php

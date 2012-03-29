@@ -12,7 +12,7 @@
 */
 body {
 
-    background:url('background/grad_background.jpg') repeat-x #a5c1cb;
+    background:url('background/back-1.jpg') no-repeat #ffffff;
 }
 
 
@@ -30,12 +30,16 @@ root {
     margin-bottom:8px;
 
 }
-.mainheading h2{
+.mainheading h2, .mainheading h3,  .mainheading h4{
     padding-left:10px;
     padding-top:5px;
     padding-bottom:5px;
     color:#007eff;
     margin-bottom:0px;
+}
+.internal {
+    margin-left:0px;
+    margin-right:0px;
 }
 
 .big_menu {
@@ -43,7 +47,7 @@ root {
     display:block;
     position: relative;
 
-    background:url('background/headerback3.jpg') #1d5b6a;
+  
     height:100%;
     margin-left:0px;
     padding-top:50px;
@@ -171,6 +175,18 @@ position:relative;
     top:0;
 
 }
+
+.sticky2 {
+   position:absolute;
+    
+    right:0px;
+
+}
+
+.sub {
+    padding-top:0px;
+}
+
 #menutop {
 
     width:100%;
@@ -215,7 +231,7 @@ position:relative;
 
 .feature_box {
     float:left;
-    width: 220px;
+   
     color:#fff;
     height:100px;
     margin-bottom:8px;
@@ -248,3 +264,28 @@ position:relative;
     color:#007eff;
 }
 
+.services {
+    background-color: #007eff;
+    text-align: center;
+    height:40px;
+    margin-bottom:10px;
+    padding:2px;
+    color:#ffffff;
+}
+.service {
+    clear:both;
+
+    padding:10px;
+    color:#fff;
+    background-color: #5687b5;
+    display: block;
+}
+
+.costoptions {
+    background-color: #5687b5;
+ 
+    height:140px;
+    margin-bottom:10px;
+
+    color:#ffffff;
+}

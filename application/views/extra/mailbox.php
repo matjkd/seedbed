@@ -1,24 +1,51 @@
-<div class="feature_box">
-    <div id="bluebox_content">
+<style>
+    .short { height:30px; margin-top:0px; margin-bottom:0px;}
+</style>
+<div class="feature_box short">
+    <a href="#basicCosts">
+        <div id="bluebox_content">
 
-        <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/mail.png"/></div>
+            Basic Costs
 
-        <div class="blue_text">
-            <h4>Level 1</h4>
-            <p>Accommodation Address only</p>
+
         </div>
-    </div>
+    </a>
 
-</div>   
-<div class="feature_box">
-    <div id="bluebox_content">
+</div>  
 
-        <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/mail.png"/></div>
+<div class="feature_box short">
+    <a href="#centralServices">
+        <div id="bluebox_content">
 
-        <div class="blue_text">
-            <h4>Level 2</h4>
-            <p>Accommodation Address and telephone answering service.</p>
+            Central Services
+
+
         </div>
-    </div>
+    </a>
+
+</div>  
+
+
+<div class="feature_box short">
+    <a href="#conferenceRoom">
+        <div id="bluebox_content">
+
+            Conference Room
+
+
+        </div>
+    </a>
+
+</div>  
+
+<div class="feature_box short">
+    <a href="#priceList">
+        <div id="bluebox_content">
+
+            Price List
+
+
+        </div>
+    </a>
 
 </div>  

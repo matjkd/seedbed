@@ -32,7 +32,7 @@
 
 <?php foreach ($content as $row): ?>
     <?php if ($row->extra != NULL) { ?>
-        <?= $this->load->view('extra/' . $row->extra) ?>
+        <?= $this->load->view($row->extra) ?>
     <?php } ?>
 <?php endforeach; ?>
     <div style="clear:both;"></div>
