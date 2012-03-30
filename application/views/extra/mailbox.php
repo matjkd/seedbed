@@ -1,11 +1,11 @@
 <style>
-    .short { height:30px; margin-top:0px; margin-bottom:0px;}
+    .short { height:40px; margin-top:0px; margin-bottom:0px;}
 </style>
 <div class="feature_box short">
     <a href="#basicCosts">
         <div id="bluebox_content">
 
-            Basic Costs
+            <h4>Basic Costs</h4>
 
 
         </div>
@@ -17,7 +17,7 @@
     <a href="#centralServices">
         <div id="bluebox_content">
 
-            Central Services
+            <h4>Central Services</h4>
 
 
         </div>
@@ -30,7 +30,7 @@
     <a href="#conferenceRoom">
         <div id="bluebox_content">
 
-            Conference Room
+            <h4>Conference Room</h4>
 
 
         </div>
@@ -42,7 +42,7 @@
     <a href="#priceList">
         <div id="bluebox_content">
 
-            Price List
+            <h4>Price List</h4>
 
 
         </div>

@@ -105,7 +105,7 @@ $(document).ready(function() {
     var windowwidth = $(window).width(),
     contenttop = $('#contenttop').offset().top,
     adjustment = contenttop - 100,
-    filleradjust =  contenttop + 100;
+    filleradjust =  contenttop + 200;
    
   
     $('#fullbackground img').css("width", windowwidth);

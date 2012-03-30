@@ -25,7 +25,7 @@ body {
     width:100%;
     top:300px;
     height:100%;
-     z-index: -9;
+    z-index: -9;
 }
 #whitefadefiller {
     position:absolute;
@@ -33,7 +33,7 @@ body {
     width:100%;
     top:650px;
     height:2000px;
-     z-index: -8;
+    z-index: -8;
 }
 
 
@@ -48,7 +48,7 @@ root {
 .mainheading {
     margin-top:8px;
     background:#1f313f;
-      opacity:0.9;
+    opacity:0.9;
     margin-bottom:8px;
 
 }
@@ -69,7 +69,7 @@ root {
     display:block;
     position: relative;
 
-  
+
     height:100%;
     margin-left:0px;
     padding-top:50px;
@@ -80,7 +80,7 @@ root {
 
     background:#121c24;
     color:#fff;
-      opacity:0.9;
+    opacity:0.9;
     -moz-box-shadow: 3px 3px 12px #000000;
     -webkit-box-shadow: 3px 3px 12px #000000;
     box-shadow: 3px 3px 12px #000000;
@@ -95,11 +95,11 @@ root {
 .bluebox {
     background-color: #007eff;
     color:#fff;
-     opacity:0.9;
+    opacity:0.9;
     height:100px;
     margin-bottom:8px;
     margin-top:8px;
-position:relative;
+    position:relative;
 }
 
 #bluebox_content {
@@ -124,11 +124,11 @@ position:relative;
 }
 
 .clickhere {
-    
+
     display:none;
     position:absolute;
     bottom:0px;
-   padding-left:10px;
+    padding-left:10px;
 }
 .clickhere a {
     text-decoration: none;
@@ -186,7 +186,7 @@ position:relative;
 .nav {
     display:block;
     position: absolute;
-   
+
     background-color:#121c24;
     width:100%;
     height:35px;
@@ -202,8 +202,8 @@ position:relative;
 }
 
 .sticky2 {
-   position:absolute;
-    
+    position:absolute;
+
     right:0px;
 
 }
@@ -221,13 +221,13 @@ position:relative;
     text-transform: uppercase;
     font-weight: normal;
     font-size: 12px;
-   
+
     padding-left: 0px;
     border-top: solid 0px #4a5b63;
     line-height:31px;;
 
 
-   
+
     display:block;
     position:relative;
 }
@@ -256,7 +256,7 @@ position:relative;
 
 .feature_box {
     float:left;
-   
+
     color:#fff;
     height:100px;
     margin-bottom:8px;
@@ -264,11 +264,15 @@ position:relative;
     background-color: #5687b5;
 
 }
+.feature_box a, .feature_box h4 {
+    text-decoration: none;
+    color:#fff;
+}
 .features {
 
     background-color: #5687b5;
     margin-bottom:8px;
-    
+
 
 }
 #footerblock {
@@ -311,14 +315,25 @@ position:relative;
 }
 .service a {
     color:#fff;
-        text-decoration: none;
+    text-decoration: none;
 }
 
 .costoptions {
-    background-color: #5687b5;
- 
-    height:140px;
-    margin-bottom:0px;
-
+    background-color: #007eff;
+    position:relative;
+    height:160px;
+    margin-bottom:10px;
+    margin-top:10px;
     color:#ffffff;
+}
+.costoptions h4 {
+     color:#ffffff;
+}
+
+.price {
+    height:35px;
+    background-color: #005cbb;
+    position :absolute;
+    bottom:0px;
+
 }
