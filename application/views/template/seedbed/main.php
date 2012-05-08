@@ -102,7 +102,7 @@ if (!isset($rightsize) || $rightsize == NULL) {
             </div>
 
 
-            <div class="<?= $rightsize ?> columns features"  >  
+            <div class="<?= $rightsize ?> columns "  >  
 <?php
 if (isset($sidebox) && $sidebox != NULL) {
     $this->load->view($sidebox);
