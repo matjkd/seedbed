@@ -95,8 +95,56 @@ $(document).ready(function() {
 });
 
 
+/*************************************************
+    /*    passthrough clicker for IE
+    /***********************************************/
 
+function passThrough(e) {
+    $(".clickthrough").each(function() {
+    	
+    	
+       // check if clicked point (taken from event) is inside element
+       var mouseX = e.pageX;
+       var mouseY = e.pageY;
+       var offset = $(this).offset();
+       var width = $(this).width();
+       var height = $(this).height();
+
+       if (mouseX > offset.left && mouseX < offset.left+width 
+           && mouseY > offset.top && mouseY < offset.top+height)
+    	  
+         $(this).click(); // force click event
+       
+    });
+}
+
+$(document).ready(function() {
+	$(".shield").click(passThrough);
+	
+	
+	$(".clickthrough").click(
+	      
+	        function() {
+	        	$('.shield').stop().animate({
+	        		opacity:0.8
+	        	});
+	            $(this).parent().stop().animate({
+	            	opacity:0.5
+	               
+	            
+	            },
+	            150
+	            );
+	            
+	        }
+	        );
+	
+	
+	
+});
     
+
+
     
 /*************************************************
     /*    fix background width
@@ -347,5 +395,7 @@ $(document).ready(function() {
     });
     
   
+     
+     
     
 });

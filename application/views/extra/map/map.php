@@ -3,55 +3,55 @@
 
 
 <div id="mainmap">
-    <span class="eblock"  id="e1">&nbsp;</span>
-    <span class="eblock"  id="e2">&nbsp;</span>
-    <span class="eblock"  id="e3">&nbsp;</span>
-    <span class="eblock"  id="e4">&nbsp;</span>
-    <span class="eblock"  id="e5">&nbsp;</span>
-    <span class="eblock"  id="e6">&nbsp;</span>
-    <span class="eblock"  id="e7">&nbsp;</span>
-    <span class="eblock"  id="e8">&nbsp;</span>
-    <span class="eblock"  id="e9">&nbsp;</span>
-    <span class="eblock"  id="e10">&nbsp;</span>
-    <span class="eblock"  id="e11">&nbsp;</span>
-    <span class="eblock"  id="e12">&nbsp;</span>
+    <span class="eblock shield"  id="e1"><span class="clickthrough" >E1</span></span>
+    <span class="eblock shield"  id="e2"><span class="clickthrough" >E2</span></span>
+    <span class="eblock shield"  id="e3"><span class="clickthrough" >E3</span></span>
+    <span class="eblock shield"  id="e4"><span class="clickthrough">E4</span></span>
+    <span class="eblock shield"  id="e5"><span class="clickthrough" >E5</span></span>
+    <span class="eblock shield"  id="e6"><span class="clickthrough" >E6</span></span>
+    <span class="eblock shield"  id="e7"><span class="clickthrough" >E7</span></span>
+    <span class="eblock shield"  id="e8"><span class="clickthrough" >E8</span></span>
+    <span class="eblock shield"  id="e9"><span class="clickthrough" >E9</span></span>
+    <span class="eblock shield"  id="e10"><span class="clickthrough" >E10</span></span>
+    <span class="eblock shield"  id="e11"><span class="clickthrough" >E11</span></span>
+    <span class="eblock shield"  id="e12"><span class="clickthrough" >E12</span></span>
+   <span class="eblock shield hidden"  id="e13"><span class="clickthrough" >&nbsp;</span></span>
+    
+    <span class="dblock shield"  id="d1"><span class="clickthrough" >D1</span></span>
+    <span class="dblockLarge shield"  id="d2"><span class="clickthrough" >D2</span></span>
+    <span class="dblockLarge shield"  id="d3"><span class="clickthrough" >D3</span></span>
+    <span class="dblockLarge shield"  id="d4"><span class="clickthrough" >D4</span></span>
+    <span class="dblockLarge shield"  id="d5"><span class="clickthrough" >D5</span></span>
+    <span class="dblockLarge shield"  id="d6"><span class="clickthrough" >D6</span></span>
+    <span class="dblockLarge shield"  id="d7"><span class="clickthrough" >D7</span></span>
+    <span class="dblockLarge shield"  id="d8"><span class="clickthrough" >D8</span></span>
+    <span class="dblockLarge shield"  id="d9"><span class="clickthrough" >D9</span></span>
+    <span class="dblockLarge shield"  id="d10"><span class="clickthrough" >D10</span></span>
+    <span class="dblockLarge shield"  id="d11"><span class="clickthrough" >D11</span></span>
+    <span class="dblockLarge shield"  id="d12"><span class="clickthrough" >D12</span></span>
+    <span class="dblockLarge shield"  id="d13"><span class="clickthrough" >D13</span></span>
+    <span class="dblock shield"  id="d14"><span class="clickthrough" >D14</span></span>
     
     
-     <span class="dblock"  id="d1">&nbsp;</span>
-    <span class="dblock"  id="d2">&nbsp;</span>
-    <span class="dblockLarge"  id="d3">&nbsp;</span>
-    <span class="dblockLarge"  id="d4">&nbsp;</span>
-    <span class="dblockLarge"  id="d5">&nbsp;</span>
-    <span class="dblockLarge"  id="d6">&nbsp;</span>
-    <span class="dblockLarge"  id="d7">&nbsp;</span>
-    <span class="dblockLarge"  id="d8">&nbsp;</span>
-    <span class="dblockLarge"  id="d9">&nbsp;</span>
-    <span class="dblockLarge"  id="d10">&nbsp;</span>
-    <span class="dblockLarge"  id="d11">&nbsp;</span>
-    <span class="dblockLarge"  id="d12">&nbsp;</span>
-      <span class="dblockLarge"  id="d13">&nbsp;</span>
-    <span class="dblockLarge"  id="d14">&nbsp;</span>
     
+    <span class="bblock shield"  id="b1"><span class="clickthrough" >B1</span></span>
+    <span class="bblock shield"  id="b2"><span class="clickthrough" >B2</span></span>
+    <span class="bblock shield"  id="b3"><span class="clickthrough" >B3</span></span>
+    <span class="bblock shield"  id="b4"><span class="clickthrough" >B4</span></span>
+    <span class="bblock shield"  id="b5"><span class="clickthrough" >B5</span></span>
+    <span class="bblockLarge shield"  id="b6"><span class="clickthrough" >B6</span></span>
+    <span class="bblockLarge shield"  id="b7"><span class="clickthrough" >B7</span></span>
+    <span class="bblockLarge shield"  id="b8"><span class="clickthrough" >B8</span></span>
+    <span class="bblockLarge shield"  id="b9"><span class="clickthrough" >B9</span></span>
+    <span class="bblock shield"  id="b10"><span class="clickthrough" >B10</span></span>
     
+     <span class="ablock shield"  id="a1"><span class="clickthrough" >A1</span></span>
+    <span class="ablock shield"  id="a2"><span class="clickthrough" >A2</span></span>
+    <span class="ablock shield"  id="a3"><span class="clickthrough" >A3</span></span>
+    <span class="ablock shield"  id="a4"><span class="clickthrough" >A4</span></span>
     
-    <span class="bblock"  id="b1">&nbsp;</span>
-    <span class="bblock"  id="b2">&nbsp;</span>
-    <span class="bblock"  id="b3">&nbsp;</span>
-    <span class="bblock"  id="b4">&nbsp;</span>
-    <span class="bblock"  id="b5">&nbsp;</span>
-    <span class="bblock"  id="b6">&nbsp;</span>
-    <span class="bblockLarge"  id="b7">&nbsp;</span>
-    <span class="bblockLarge"  id="b8">&nbsp;</span>
-    <span class="bblockLarge"  id="b9">&nbsp;</span>
-    <span class="bblockLarge"  id="b10">&nbsp;</span>
-    
-     <span class="ablock"  id="a1">&nbsp;</span>
-    <span class="ablock"  id="a2">&nbsp;</span>
-    <span class="ablock"  id="a3">&nbsp;</span>
-    <span class="ablock"  id="a4">&nbsp;</span>
-    
-      <span class="cblock"  id="c1">&nbsp;</span>
-    <span class="cblock"  id="c2">&nbsp;</span>
-    <span class="cblock"  id="c3">&nbsp;</span>
+      <span class="cblock shield"  id="c1"><span class="clickthrough" >C1</span></span>
+    <span class="cblock shield"  id="c2"><span class="clickthrough" >C2</span></span>
+    <span class="cblock shield"  id="c3"><span class="clickthrough" >C3</span></span>
 
 </div>
