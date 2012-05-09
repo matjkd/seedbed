@@ -1,6 +1,27 @@
+<?php $blockArray = array('A', 'B', 'C', 'D', 'E');?>
+<ul id="unitmenu" class="unitmenu noaccordion expandfirst">
+	<?php foreach($blockArray as $block):?>
 
-<?php foreach($units as $row):?>
+	<li style="position: static;"><a id="<?=$block?>" href="">Block <?=$block?>
+	</a>
+		<ul style="display: block;">
+			<?php foreach($units as $row):?>
 
-<?=$row->block[0]?><?=$row->number?><br/>
+			<?php if($row->block[0] == $block) {?>
 
-<?php endforeach;?>
+			<li class="<?= strtolower($row->block[0]).$row->number?>"
+				id="<?=$row->unit_id?>"><span
+				onclick="unitClick('<?php echo strtolower($row->block[0]).$row->number;?>', '<?=$row->unit_id?>')">
+					<?=$row->block[0].$row->number?> - <?=round($row->width, 2)?>m
+					x <?=round($row->length, 2)?>m <?php if($row->occupied > 0) {?> (<?=$row->tenant_name?>)
+					<?php }?>
+			</span></li>
+
+
+			<?php } ?>
+			<?php endforeach;?>
+		</ul>
+	</li>
+	<?php endforeach;?>
+</ul>
+

@@ -120,6 +120,14 @@ class Welcome extends MY_Controller {
 		$this->load->vars($data);
 		$this->load->view('template/main');
 	}
+	
+	function unitinfo($unitId) {
+		$this->load->model('map_model');
+		$data['unit'] = $this->map_model->get_unit($unitId);
+		$this->load->vars($data);
+		$this->load->view('template/seedbed/unitAjax');
+		
+	}
 
 	function gallery($gallery) {
 		$data['content'] = $this->content_model->get_gallery($gallery);

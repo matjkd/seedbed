@@ -332,3 +332,45 @@ root {
 	position: absolute;
 	bottom: 0px;
 }
+
+
+ul.unitmenu, ul.unitmenu ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+ul.unitmenu a {
+    display: block;
+    text-decoration: none;	
+}
+
+ul.unitmenu li {
+    margin-top: 1px;
+}
+
+ul.unitmenu li a {
+    background: #2c66b0;
+    color: #fff;	
+    padding: 0.5em;
+}
+
+ul.unitmenu li a:hover {
+
+    background: #3d77c0;
+    color: #fff;	
+}
+
+ul.unitmenu li ul li a {
+    background: #7492fd;
+    color: #339;
+    padding-left: 20px;
+}
+
+ul.unitmenu li ul li a:hover {
+    background: #d0dafd;
+    color: #339;
+    border-left: 5px #2c66b0 solid;
+    padding-left: 15px;
+}

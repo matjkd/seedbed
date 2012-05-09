@@ -14,10 +14,13 @@
 .clickthrough {
 	width:30px;
 	height:30px;
-	color:#fff;
+	
 	font-weight:bold;
 	font-size:0.8em;
 	
+}
+.shield {
+	color:#fff;
 }
 .highlight {background-color: yellow;}
 
@@ -25,7 +28,7 @@
     position:relative;
     width:650px;
     height:535px;
-  
+  background: url('background/mapbackground.png') no-repeat;
 }
 
 .eblock {
