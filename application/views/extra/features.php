@@ -5,7 +5,7 @@
         <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/map.png"/></div>
 
         <div class="blue_text">
-            <h4>Map of centre</h4>
+            <h4><a href="<?=base_url()?>map">Map of centre</a></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
         </div>
     </div>

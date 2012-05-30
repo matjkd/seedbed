@@ -374,3 +374,7 @@ ul.unitmenu li ul li a:hover {
     border-left: 5px #2c66b0 solid;
     padding-left: 15px;
 }
+.clicky {
+	
+	cursor:pointer;
+}

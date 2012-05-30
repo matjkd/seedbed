@@ -23,6 +23,7 @@ class MY_Controller extends CI_Controller {
 			$config_data['config_address'] = "".$row->address1.", ".$row->address2.", ".$row->address3.", ".$row->address4.", ".$row->address5."";
 			
 			$config_data['config_version'] = "0.0.9";
+			$config_data['bucket'] = $row->bucket;
 			$config_data['config_email'] = $row->main_email;
 			$config_data['config_website'] = $row->web_address;
 			$config_data['config_phone'] = $row->main_phone;
@@ -35,6 +36,7 @@ class MY_Controller extends CI_Controller {
 			$currentyear = date('Y');
 			$age = $currentyear - $startdate;
 			$config_data['age'] = $age;
+			$this->bucket = $row->bucket;
 			$this->config_theme = $row->company_theme;
 			$this->config_email = $row->main_email;
 
