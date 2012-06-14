@@ -14,10 +14,13 @@
 <!-- CSS
 ================================================== -->
 <link rel="stylesheet" href="<?= base_url() ?>css/custom-theme/jquery-ui-1.8.9.custom.css">
+
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/base.css">
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/skeleton.css">
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/layout.css">
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/template.css">
+ 
+
 
 <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
