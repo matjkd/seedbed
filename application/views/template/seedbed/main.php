@@ -32,7 +32,7 @@
         <!-- Primary Page Layout
         ================================================== -->
 
-        <!-- Delete everything in this .container and get started on your own site! -->
+        <!-- Main site! -->
         <div id="top_heading">
             <div class="container">
                 <div class="sixteen columns" >

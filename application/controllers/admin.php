@@ -8,6 +8,7 @@ class Admin extends MY_Controller {
         $this->is_logged_in();
         $this->load->model('content_model');
         $this->load->model('captcha_model');
+        $this->load->model('map_model');
         $this->load->model('gallery_model');
         $this->load->model('menu_model');
         $this->load->library('s3');
@@ -33,6 +34,48 @@ class Admin extends MY_Controller {
         $data['edit'] = "admin/edit/$id";
         $this->load->vars($data);
         $this->load->view('template/main');
+    }
+    function create_tenant() {
+    	$this->form_validation->set_rules('tenant_name', 'tenant_name', 'trim|required');
+    	$this->form_validation->set_rules('website', 'website', 'trim');
+    	if ($this->form_validation->run() == FALSE) { // validation hasn'\t been passed
+    		echo "validation error";
+    	} else { // passed validation proceed to post success logic
+    	
+    		$this->map_model->add_tenant();
+    	
+    	
+    		
+    	
+    	
+    		redirect("admin/assign_tenants");
+    	}
+    	
+    }
+    function assign_tenants() {
+    	$data['main_content'] = "admin/assign_tenants";
+    	$data['pages'] = $this->content_model->get_all_content();
+    	
+    	//get unit infor for map
+    	$this->load->model('map_model');
+    	$data['units'] = $this->map_model->get_units();
+    	$data['tenants'] = $this->map_model->get_tenants();
+    	$data['sidebox'] = "extra/map/create_tenant";
+    	$this->load->vars($data);
+    	$this->load->view('template/main');
+    }
+    
+    function assign_tenant() {
+    	
+    
+    		$this->map_model->assign_tenant();
+    		 
+    		 
+    	
+    		 
+    		 
+    		redirect("admin/assign_tenants");
+    	
     }
 
     function edit() {

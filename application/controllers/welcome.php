@@ -20,6 +20,9 @@ class Welcome extends MY_Controller {
 		}
 
 		$this->get_content_data($data['menu']);
+		if ($data['menu'] == 'news') {
+			$data['news'] = $this->content_model->get_content_cat('news');
+		}
 
 		$data['captcha'] = $this->captcha_model->initiate_captcha();
 		$data['seo_links'] = $this->content_model->get_seo_links();
@@ -77,7 +80,9 @@ class Welcome extends MY_Controller {
 		}
 
 		$this->get_content_data($data['menu']);
-
+		if ($data['menu'] == 'news') {
+			$data['news'] = $this->content_model->get_content_cat('news');
+		}
 
 
 		$data['sidebar'] = "sidebox/side";

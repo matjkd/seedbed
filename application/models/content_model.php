@@ -17,6 +17,15 @@ class Content_model extends CI_Model {
             return $query->result();
         }
     }
+    function get_content_cat($cat) {
+    
+    	$this->db->where('category', $cat);
+    	$this->db->order_by('date_added', 'desc');
+    	$query = $this->db->get('content');
+    	if ($query->num_rows > 0) {
+    		return $query->result();
+    	}
+    }
 
     function get_gallery($gallery) {
 

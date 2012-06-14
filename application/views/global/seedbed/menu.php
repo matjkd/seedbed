@@ -2,11 +2,11 @@
 <ul>
     <li><?= anchor('/', 'Home') ?></li>
     <li><?= anchor('/news', 'News') ?></li>
-    <li><?= anchor('/spaces', ' Spaces') ?></li>
+ 
 
     <li><?= anchor('/map', 'Map') ?></li>
-    <li><?= anchor('/voffice', 'Virtual Office') ?></li>
-        <li><?= anchor('/mailbox', 'Mailbox Service') ?></li>
+   
+        <li><?= anchor('/mailbox', 'Virtual Office') ?></li>
         
          <li><?= anchor('/tenants', 'Tenants') ?></li>
           <li><?= anchor('/othersites', 'Other Sites') ?></li>

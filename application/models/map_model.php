@@ -18,6 +18,43 @@ class Map_model extends CI_Model {
 	 	return $query->result();
 	 }
 	}
+	function add_tenant() {
+
+		
+		
+		$form_data = array(
+				'tenant_name' =>  $this->input->post('tenant_name'),
+				'website' => $this->input->post('website'),
+				'visible' => $this->input->post('visible')
+		);
+		$insert = $this->db->insert('tenants', $form_data);
+		return $insert;
+		
+		
+	}
+	
+	function assign_tenant() {
+		$unit_update = array(
+				'occupied' => $this->input->post('tenants')
+		);
+		
+		
+		$unit_id = $this->input->post('unit_id');
+		
+		$this->db->where('unit_id', $unit_id);
+		$update = $this->db->update('units', $unit_update);
+		return $update;
+		
+	}
+	
+	
+	function get_tenants() {
+
+		$query = $this->db->get('tenants');
+		if ($query->num_rows > 0) {
+			return $query->result();
+		}
+	}
 
 	function get_blocks() {
 

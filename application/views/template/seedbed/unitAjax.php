@@ -19,13 +19,17 @@ function convert_to_inches($meters) {
 	}
 	
 	return $total;
-}
+}https://www.google.co.uk/search?q=baking+goods&hl=en&prmd=imvns&source=lnms&tbm=isch&ei=nuTZT-O6IsqmhAf6iPXXAw&sa=X&oi=mode_link&ct=mode&cd=2&ved=0CLwBEPwFKAE
 
 
 
 ?>
 <?php if($row->occupied > 0) {?>
+<?php if($row->visible == 1){?>
 					<strong><?=$row->tenant_name?></strong><br/><br/>
+					<?php } else {?>
+					<strong>Occupied</strong><br/><br/>
+					<?php }?>
 					<?php }?>
 
 <strong>Width</strong>:<?=round($row->width, 2)?>m (<?=convert_to_inches($row->width)?>)<br/>
