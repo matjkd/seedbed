@@ -70,6 +70,15 @@ class Welcome extends MY_Controller {
 		$this->load->view('template/main');
 	}
 
+	function form_test() {
+		$this->load->helper(array('dompdf', 'file'));
+		$data['main'] = "forms/mailbox_form";
+		$this->load->vars($data);
+		$stream = TRUE;
+		$html = $this->load->view('template/pdf', $data, true);
+		pdf_create($html, 'test', $stream);
+		
+	}
 	function home() {
 
 		$segment_active = $this->uri->segment(3);
