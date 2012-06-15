@@ -2,12 +2,12 @@
     <?= form_open('email/send'); ?>
     <br/>
     <p class="form_name">
-        <?= form_label('Full Name') ?><br/>
+        <?= form_label('Full Name') ?>
         <?= form_input('name', set_value('name')) ?>
     </p>
 
     <p class="form_phone">
-        <?= form_label('Phone Number') ?><br/>
+        <?= form_label('Phone Number') ?>
         <?= form_input('phone', set_value('phone')) ?>
     </p>
     <?= form_label('Email') ?>
