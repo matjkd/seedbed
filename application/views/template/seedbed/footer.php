@@ -14,9 +14,9 @@ $(document).ready(function () {
 	</script>
   
    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.js"></script>
-<!-- <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=<?=$maps_api?>" type="text/javascript"></script>-->
-
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script> 
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
+ 
 
   <!-- scripts concatenated and minified via ant build script-->
    <script src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>

@@ -10,7 +10,7 @@
 
     </head>
 
-    <body>
+  <body onload="initialize()">
 
         <!--   hidden input to pass base url to js files-->
         <input type="hidden" id="baseurl" value="<?= base_url() ?>"/>
