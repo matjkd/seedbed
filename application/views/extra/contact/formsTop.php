@@ -3,7 +3,7 @@
 <div class="feature_box eight columns" >  
     <div style="padding:10px;">
         <h4>
-<a href="<?=base_url()?>welcome/mailbox_form">Mailbox and Telephone Appliaction Form</a></h4>
+<a href="<?=base_url()?>welcome/mailbox_form">Mailbox and Telephone Application Form</a></h4>
 pdf download
         </p>
     </div>
@@ -14,7 +14,7 @@ pdf download
 <div class="feature_box eight columns" >  
     <div style="padding:10px;">
         <h4>
-<a href="<?=base_url()?>welcome/mailbox_form">Tenant Appliaction Form</a></h4>
+<a href="<?=base_url()?>welcome/mailbox_form">Tenant Application Form</a></h4>
         </p>
     </div>
 

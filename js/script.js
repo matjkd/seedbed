@@ -444,38 +444,31 @@ function HomeControl(controlDiv, map) {
   // Setup the click event listeners: simply set the map to
   // Chicago
   google.maps.event.addDomListener(controlUI, 'click', function() {
-    map.setCenter(chicago)
+    map.setCenter(seedbed)
   });
 
 }
 
+
+
 function initialize() {
-    var map = new google.maps.Map(document.getElementById('map_canvas'), {
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      center: seedbed,
-      zoom: 15
-    });
-
-    var request = {
-      reference: '4602067563344549851'
-    };
-
-    var infowindow = new google.maps.InfoWindow();
-    var service = new google.maps.places.PlacesService(map);
-
-    service.getDetails(request, function(place, status) {
-      if (status == google.maps.places.PlacesServiceStatus.OK) {
-        var marker = new google.maps.Marker({
-          map: map,
-          position: place.geometry.location
-        });
-        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent(place.name);
-          infowindow.open(map, this);
-        });
-      }
-    });
+  var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+  var myOptions = {
+    zoom: 15,
+    center: seedbed,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
   }
+  var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  
+  var marker = new google.maps.Marker({
+      position: seedbed, 
+      map: map,
+      title:"EFI Loughton"
+  });   
+}
+
+
+
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
