@@ -1,7 +1,7 @@
 
+<div style="margin-left:0px;">
 
-
-    <div class="feature_box">
+    <div class="four columns alpha feature_box" >
         <div id="bluebox_content">
 
             <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/cutlery.png"/></div>
@@ -14,8 +14,8 @@
 
     </div>
     
-<div style="display:block; width:20px; float:left; position:relative; height:1px;">&nbsp;</div>
-    <div class="feature_box">
+
+    <div class="four columns  omega feature_box">
         <div id="bluebox_content">
 
             <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/chart.png"/></div>
@@ -28,9 +28,8 @@
 
     </div>
 
-    
-       
-<div class="feature_box">
+
+<div class="four columns alpha feature_box" >
     <div id="bluebox_content">
 
         <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/talk.png"/></div>
@@ -43,9 +42,8 @@
 
 </div>   
 
-<div style="display:block; width:20px; float:left; position:relative; height:1px;">&nbsp;</div>
 
-<div class="feature_box">
+<div class="four columns omega feature_box">
         <div id="bluebox_content">
             <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/talk.png"/></div>
             <div class="blue_text">
@@ -56,4 +54,4 @@
 
     </div>
 
-
+</div>

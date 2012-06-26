@@ -98,6 +98,13 @@ root {
 	margin-bottom: 8px;
 	margin-top: 8px;
 	position: relative;
+	
+}
+
+.alterside .bluebox {
+	
+	
+	margin-left:0px;
 }
 
 #bluebox_content {
@@ -227,6 +234,8 @@ root {
 #menutop ul {
 	margin-right: auto;
 	margin-left: auto;
+	padding-left:0px;
+	
 }
 
 #menutop li {
@@ -251,6 +260,7 @@ root {
 	margin-bottom: 8px;
 	margin-top: 8px;
 	background-color: #5687b5;
+	position: relative;
 }
 
 .feature_box a,.feature_box h4 {
@@ -280,6 +290,9 @@ root {
 
 #footerblock h3 {
 	color: #007eff;
+}
+#footerblock strong {
+	color: #ffffff;
 }
 
 #footerblock a {
@@ -331,6 +344,14 @@ root {
 	background-color: #005cbb;
 	position: absolute;
 	bottom: 0px;
+}
+ul {
+	list-style-type:square;
+	padding-left:40px;
+}
+li {
+	
+	
 }
 
 

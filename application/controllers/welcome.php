@@ -8,6 +8,7 @@ class Welcome extends MY_Controller {
 	function __construct() {
 		parent::__construct();
 		$this->load->model('captcha_model');
+		$this->load->model('map_model');
 	}
 
 	public function index() {
@@ -21,9 +22,8 @@ class Welcome extends MY_Controller {
 
 		
 		$this->get_content_data($data['menu']);
-		if ($data['menu'] == 'news') {
-			$data['news'] = $this->content_model->get_content_cat('news');
-		}
+		
+		
 
 		$data['captcha'] = $this->captcha_model->initiate_captcha();
 		$data['seo_links'] = $this->content_model->get_seo_links();
@@ -47,6 +47,10 @@ class Welcome extends MY_Controller {
 	function get_content_data($menu) {
 		$data['content'] = $this->content_model->get_content($menu);
 		$data['captcha'] = $this->captcha_model->initiate_captcha();
+		
+		$data['news'] = $this->content_model->get_content_cat('news');
+		$data['tenants'] = $this->map_model->get_tenants();
+		$data['units'] = $this->map_model->get_units();
 		foreach ($data['content'] as $row):
 
 		$data['title'] = $row->title;
@@ -79,6 +83,16 @@ class Welcome extends MY_Controller {
 		$html = $this->load->view('template/pdf', $data, true);
 		pdf_create($html, 'Mailbox Application Form', $stream);
 		
+	}
+	
+	function tenant_form() {
+		$this->load->helper(array('dompdf', 'file'));
+		$data['main'] = "forms/tenant_form";
+		$this->load->vars($data);
+		$stream = TRUE;
+		$html = $this->load->view('template/pdf', $data, true);
+		pdf_create($html, 'Mailbox Application Form', $stream);
+	
 	}
 	function home() {
 

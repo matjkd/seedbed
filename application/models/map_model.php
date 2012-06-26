@@ -20,8 +20,8 @@ class Map_model extends CI_Model {
 	}
 	function add_tenant() {
 
-		
-		
+
+
 		$form_data = array(
 				'tenant_name' =>  $this->input->post('tenant_name'),
 				'website' => $this->input->post('website'),
@@ -29,27 +29,27 @@ class Map_model extends CI_Model {
 		);
 		$insert = $this->db->insert('tenants', $form_data);
 		return $insert;
-		
-		
+
+
 	}
-	
+
 	function assign_tenant() {
 		$unit_update = array(
 				'occupied' => $this->input->post('tenants')
 		);
-		
-		
+
+
 		$unit_id = $this->input->post('unit_id');
-		
+
 		$this->db->where('unit_id', $unit_id);
 		$update = $this->db->update('units', $unit_update);
 		return $update;
-		
-	}
-	
-	
-	function get_tenants() {
 
+	}
+
+
+	function get_tenants() {
+		$this->db->order_by('tenant_name');
 		$query = $this->db->get('tenants');
 		if ($query->num_rows > 0) {
 			return $query->result();
