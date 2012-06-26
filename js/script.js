@@ -17,18 +17,10 @@ window.log = function() {
 };
 
 $(document).ready(function() {
-	$('.slideshow').cycle({
-		speedIn : 2000,
-		speedOut : 2000,
-		timeout : 10000,
-		fx : 'fade' // choose your transition type, ex: fade, scrollUp, shuffle,
-					// etc...
-	});
-	$('.slideshow').css("display", "block");
+	
 });
 
-$
-		.backstretch("https://s3-eu-west-1.amazonaws.com/grandgardendesigns/background.jpg");
+
 
 // catch all document.write() calls
 (function(doc) {
@@ -94,11 +86,22 @@ $(document)
 					$('#whitefade').css("top", adjustment);
 					$('#whitefadefiller').css("top", filleradjust);
 					$('#fullbackground').fadeIn();
+					
+					$('.slideshow').cycle({
+						speedIn : 2000,
+						speedOut : 2000,
+						timeout : 10000,
+						fx : 'fade' // choose your transition type, ex: fade, scrollUp, shuffle,
+									// etc...
+					});
+					$('.slideshow').css("display", "block");
 				});
 
 $(window).resize(function() {
 	var windowwidth = $(window).width();
 	$('#fullbackground img').css("width", windowwidth);
+	
+
 });
 
 $(document).ready(function() {
