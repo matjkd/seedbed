@@ -1287,7 +1287,7 @@ td.note_indent {
 table.signature_table { 
   width: 80%;
   font-size: 1.0em;
-  margin: 2em auto 2em auto;
+  margin: 2em auto 1em auto;
 }
 
 table.signature_table tr td { 

@@ -31,6 +31,7 @@
 .column.omega, .columns.omega               { margin-right: 0; }
 
 #headertext { height:155px;}
+#menutop { 	display: block;}
 .service {width:668px;}
 .feature_box {width:220px;}
 
@@ -139,6 +140,8 @@
 @media only screen and (max-width: 767px) {
     #headertext { height:200px;}
     #headerimage {display:none;}
+    #menutop {display:none;}
+    .features {display:none;}
     .service {width:280px;}
     .container { width: 300px; }
     .container .columns,

@@ -60,8 +60,12 @@
  
 </table>
 
-
 <table class="signature_table">
+<tr>
+<td colspan="4">
+(optional emergency contacts)
+</td>
+</tr>
   <tr>    
     <td>Emergency Contact 1:</td>
     <td class="written_field" style="width: 30%">&nbsp;</td><td class="spacer_field">&nbsp;</td>
@@ -112,16 +116,8 @@
   <div  style='page-break-before:always;'></div>
 <table class="signature_table">
 
-<tr>
-<td>Signage Ordered (date):</td><td class="written_field" style="width: 78%">&nbsp;</td>
-</tr>
 
-<tr>
-<td>Alarm Code (if any):</td><td class="written_field" style="width: 78%">&nbsp;</td>
-</tr>
-<tr>
-<td>Keys Issued (number of sets):</td><td class="written_field" style="width: 78%">&nbsp;</td>
-</tr>
+
 
 
 <tr>

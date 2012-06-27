@@ -106,7 +106,7 @@
 
 		<div class="<?= $mainsize ?> columns">
 
-
+<?=$this->load->view('global/alert')?>
 
 			<?= $this->load->view($main_content) ?>
 		</div>
@@ -158,7 +158,7 @@
 
 			<div class="four columns">
 
-				<h3>Contact</h3>
+				<h3>Get in Contact</h3>
 				<p>
 					<strong>EFI (Loughton) Ltd</strong><br /> The Loughton Seedbed
 					Centre<br /> Langston Road<br /> Loughton<br /> Essex<br /> IG10

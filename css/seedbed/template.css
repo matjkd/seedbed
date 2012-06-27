@@ -24,7 +24,7 @@ body {
 	background: url('background/whitegrad.png') repeat-x;
 	width: 100%;
 	top: 300px;
-	height: 100%;
+	height: 60%;
 	z-index: -9;
 }
 
@@ -33,7 +33,7 @@ body {
 	background: #fff;
 	width: 100%;
 	top: 650px;
-	height: 2000px;
+	
 	z-index: -8;
 }
 
@@ -44,6 +44,13 @@ root {
 .container {
 	
 }
+.listedprice {
+	padding-left:10px;
+}
+.listedpricelabel{
+	width:110px;
+	float:left;
+}
 
 .mainheading {
 	margin-top: 8px;
@@ -51,7 +58,10 @@ root {
 	opacity: 0.9;
 	margin-bottom: 8px;
 }
-
+.pricebox {
+	background: #ddd;
+	margin-bottom:5px;
+}
 .mainheading h2,.mainheading h3,.mainheading h4 {
 	padding-left: 10px;
 	padding-top: 5px;
@@ -227,7 +237,7 @@ root {
 	padding-left: 0px;
 	border-top: solid 0px #4a5b63;
 	line-height: 31px;;
-	display: block;
+
 	position: relative;
 }
 
@@ -401,10 +411,10 @@ ul.unitmenu li ul li a:hover {
 }
 .newsImage {
     float:left;
-    width:200px;
+    width:230px;
     padding-right:20px;
 }
 .newsImage img {
     
-    width:200px;
+    width:230px;
 }

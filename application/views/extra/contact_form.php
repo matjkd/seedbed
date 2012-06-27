@@ -22,7 +22,19 @@
     <p class="form_message">
         <?= form_textarea('message') ?>
     </p>
-
+ <?= form_label('How did you hear about us?') ?>
+ <?php $hearAboutUs =array(
+ 		'search' => 'Search Engine',
+ 		'recomendation' => 'Recommendation',
+ 		'newspaper' => 'Newspaper',
+ 		'localSign' => 'Local Sign',
+ 		'agent' => 'Agent',
+ 		'other' => 'Other',
+ 		
+ 		); ?>
+    <p class="form_hear">
+        <?= form_dropdown('hearabout', $hearAboutUs) ?>
+    </p>
     Enter the word you see below<br/>
 
 

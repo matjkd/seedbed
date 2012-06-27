@@ -7,7 +7,7 @@
 Located in 
 <?php foreach($units as $unitrow):?>
 <?php if($unitrow->occupied == $row->tenant_id) {?>
-<?=$unitrow->block?><?=$unitrow->number?>&nbsp;
+<?=$unitrow->block[0]?><?=$unitrow->number?>&nbsp;
 <?php }?>
 <?php endforeach;?>
 </div>
