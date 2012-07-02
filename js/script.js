@@ -80,7 +80,7 @@ $(document)
 		.ready(
 				function() {
 					var windowwidth = $(window).width(), contenttop = $(
-							'#contenttop').offset().top, adjustment = contenttop - 100, filleradjust = contenttop + 200;
+							'#contenttop').offset().top, adjustment = contenttop - 85, filleradjust = contenttop + 300;
 
 					$('#fullbackground img').css("width", windowwidth);
 					$('#whitefade').css("top", adjustment);

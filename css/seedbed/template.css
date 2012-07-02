@@ -17,6 +17,7 @@ body {
 #fullbackground {
 	position: absolute;
 	z-index: -10;
+clip:rect(auto, auto, 656px, auto);
 }
 
 #whitefade {
@@ -24,7 +25,7 @@ body {
 	background: url('background/whitegrad.png') repeat-x;
 	width: 100%;
 	top: 300px;
-	height: 60%;
+	height: 400px;
 	z-index: -9;
 }
 
@@ -33,7 +34,7 @@ body {
 	background: #fff;
 	width: 100%;
 	top: 650px;
-	
+	height:200px;
 	z-index: -8;
 }
 
@@ -141,10 +142,11 @@ root {
 }
 
 .clickhere {
+	float:left;
 	display: none;
-	position: absolute;
+	position: relative;
 	bottom: 0px;
-	padding-left: 10px;
+	padding-left: 0px;
 }
 
 .clickhere a {
