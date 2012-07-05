@@ -56,7 +56,7 @@
 			<h4>Workspaces</h4>
 
 		</div>
-		<br/>
+	
 		<div class="clickhere">
 		<a href="<?=base_url()?>workspaces">
 			<p>'Easy In Easy Out' liceses</p> Click Here
