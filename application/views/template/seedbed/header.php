@@ -1,11 +1,30 @@
 <!-- Basic Page Needs
   ================================================== -->
 <meta charset="utf-8">
-<title>EFI (Loughton) Ltd. The Loughton Seedbed Centre</title>
-<meta name="description" content="Loughton Seedbed Centre Essex modern light industrial units Easy in Easy out rental">
-<meta name="keywords" content="industrial,units,workspace,to,let,rent,loughton,essex,m11,m25">
 
-<meta name="author" content="">
+<title><?php if (isset($metatitle) && $metatitle != NULL) {
+    echo $metatitle;
+} else {
+    if(isset($title) && $title != NULL) { 
+        echo $title;
+    } else {
+        echo "EFI (Loughton) Ltd. The Loughton Seedbed Centre";
+    }
+} ?></title>
+<meta name="description" content="<?php if (isset($meta_description) && $meta_description != NULL) {
+    echo $meta_description;
+} else {
+    echo "Loughton Seedbed Centre Essex modern light industrial units Easy in Easy out rental";
+} ?>">
+
+<meta name="keywords" content="<?php if (isset($meta_keywords) && $meta_keywords != NULL) {
+    echo $meta_keywords;
+} else {
+    
+} ?>">
+<meta name="author" content="Redstudio Design Limited">
+
+
 
 <!-- Mobile Specific Metas
 ================================================== -->
