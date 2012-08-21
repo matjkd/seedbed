@@ -17,16 +17,16 @@ User Management
 
 
 		?>
-		<input type="text" name="firstname" title="Firstname"
+		Firstname:<input type="text" name="firstname" title="Firstname"
 			value="<?=set_value('firstname', (isset($firstname)) ? $firstname : '' )?>" />
-		<input type="text" name="lastname" title="Lastname"
+		Lastname:<input type="text" name="lastname" title="Lastname"
 			value="<?=set_value('lastname', (isset($lastname)) ? $lastname : '' )?>" />
-		<input type="text" name="email_address" title="Email Address"
+		Email Address:<input type="text" name="email_address" title="Email Address"
 			value="<?=set_value('email_address', (isset($email)) ? $email : '' )?>" />
 
 		<select name="role">
-<?php 
-if (!isset($is_logged_in) || $role != 1) {
+			<?php 
+			if (!isset($is_logged_in) || $role != 1) {
 
 
         } else { ?>
@@ -41,10 +41,11 @@ if (!isset($is_logged_in) || $role != 1) {
 	<fieldset>
 		<legend>Login Info</legend>
 
-		<input type="text" name="username" title="Username"
+		Username:<input type="text" name="username" title="Username"
 			value="<?=set_value('username', (isset($username)) ? $username : '' )?>" />
-		<input type="password" name="password" title="Password"
-			value="<?=set_value('password')?>" /> <input type="password"
+		Password:<input type="password" name="password" title="Password"
+			value="<?=set_value('password')?>" /> 
+			Repeat Password:<input type="password"
 			name="password2" title="Password" value="<?=set_value('password2')?>" />
 		<?php
 

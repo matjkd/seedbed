@@ -32,7 +32,9 @@
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
 <!-- CSS
 ================================================== -->
-<link rel="stylesheet" href="<?= base_url() ?>css/custom-theme/jquery-ui-1.8.9.custom.css">
+<link rel="stylesheet" href="<?= base_url() ?>css/custom-theme/jquery-ui-1.8.17.custom.css">
+<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.3/css/jquery.dataTables.css">
+<link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.3/css/jquery.dataTables_themeroller.css">
 
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/base.css">
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/skeleton.css">

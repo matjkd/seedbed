@@ -57,6 +57,22 @@
 				<?= $this->load->view('global/seedbed/menu') ?>
 
 			</div>
+			
+<div id="dropdownMenu">
+	<form name="jump1">
+		<select name="myjumpbox"
+			OnChange="location.href=jump1.myjumpbox.options[selectedIndex].value">
+			<option value="<?=base_url()?>" selected>Home</option>
+			<option value="<?=base_url()?>news">News</option>
+			<option value="<?=base_url()?>map">Map</option>
+			<option value="<?=base_url()?>workspaces">Workspaces</option>
+			<option value="<?=base_url()?>mailbox">Virtual Office</option>
+			<option value="<?=base_url()?>tenants">Tenants</option>
+			<option value="<?=base_url()?>terms">terms</option>
+			<option value="<?=base_url()?>contact">Contact</option>
+		</select>
+	</form>
+</div>
 		</div>
 	</div>
 

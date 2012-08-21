@@ -43,6 +43,25 @@ class Welcome extends MY_Controller {
 		$this->load->vars($data);
 		$this->load->view('template/main');
 	}
+	
+	function visit_site($id) {
+	
+		$tenant = $this->content_model->get_tenant($id);
+		foreach($tenant as $row):
+	
+		$site = $row->website;
+	
+		endforeach;
+		
+		
+		//log visit to site
+		$this->content_model->log_visit($site);
+		
+		
+		redirect("http://".$site);
+		
+	
+	}
 
 	function get_content_data($menu) {
 		$data['content'] = $this->content_model->get_content($menu);
@@ -91,7 +110,7 @@ class Welcome extends MY_Controller {
 		$this->load->vars($data);
 		$stream = TRUE;
 		$html = $this->load->view('template/pdf', $data, true);
-		pdf_create($html, 'Mailbox Application Form', $stream);
+		pdf_create($html, 'Tenant Application Form', $stream);
 	
 	}
 	function home() {

@@ -43,9 +43,20 @@ $(function() {
 
 });
 
+
+$(document).ready(function() {
+    oTable = $('#datatable').dataTable({
+        "bJQueryUI": true,
+        "sPaginationType": "full_numbers"
+    });
+} );
+
 // date picker on menu page
 
 $(document).ready(
+		
+		
+		
 		function() {
 			$("#datepicker").datepicker(
 					{

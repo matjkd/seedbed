@@ -20,3 +20,6 @@
 
 </p>
 <?=form_close()?>
+
+
+<?=$this->load->view('admin/dashboard')?>

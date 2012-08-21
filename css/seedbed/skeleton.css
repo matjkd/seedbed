@@ -34,6 +34,9 @@
 #menutop { 	display: block;}
 .service {width:668px;}
 .feature_box {width:220px;}
+#dropdownMenu {
+    display:none;
+}
 
 /* Base Grid */
 .container .one.column,
@@ -92,6 +95,9 @@
     #headerimage {display:none;}
     .service {width:528px;}
     .feature_box {width:172px;}
+     #dropdownMenu {
+        display:none;
+    }
     .container .one.column,
     .container .one.columns                     { width: 28px; }
     .container .two.columns                     { width: 76px; }
@@ -141,6 +147,13 @@
     #headertext { height:200px;}
     #headerimage {display:none;}
     #menutop {display:none;}
+    #dropdownMenu {
+    display:block;
+}
+.remove-bottom img {
+	
+	width:280px;
+}
     .features {display:none;}
     .service {width:280px;}
     .container { width: 300px; }
@@ -197,6 +210,9 @@
     .container .columns,
     .container .column { margin: 0; }
     .service {width:400px;}
+        #dropdownMenu {
+    display:block;
+}
     #headertext { height:155px;}
     #headerimage {display:none;}
     .container .one.column,

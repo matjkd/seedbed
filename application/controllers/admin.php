@@ -15,7 +15,8 @@ class Admin extends MY_Controller {
 	}
 
 	function index() {
-		$data['main_content'] = "admin/dashboard";
+		$data['sidebox'] = "admin/dashboard";
+		$data['main_content'] = "admin/main_dash";
 		$data['pages'] = $this->content_model->get_all_content();
 		$data['seo_links'] = $this->content_model->get_seo_links();
 		$this->load->vars($data);
@@ -63,13 +64,30 @@ class Admin extends MY_Controller {
 		$this->load->view('template/main');
 	}
 
+	function list_tenants() {
+		$data['main_content'] = "admin/list_tenants";
+		$data['tenants'] = $this->map_model->get_tenants();
+		$data['sidebox'] = "admin/dashboard";
+		$this->load->vars($data);
+		$this->load->view('template/main');
+	}
+	
+	function list_clicks() {
+		$data['main_content'] = "admin/list_clicks";
+		$data['clicks'] = $this->content_model->get_clicks();
+		$data['sidebox'] = "admin/dashboard";
+		$this->load->vars($data);
+		$this->load->view('template/main');
+	}
 	function assign_tenant() {
 		 
-
+		
 		$this->map_model->assign_tenant();
 		redirect("admin/assign_tenants");
 		 
 	}
+	
+	
 
 	function edit() {
 
@@ -86,6 +104,39 @@ class Admin extends MY_Controller {
 
 		$this->load->vars($data);
 		$this->load->view('template/main');
+	}
+	
+	function edit_tenant() {
+	
+	
+		$id = $this->uri->segment(3);
+		
+		$data['tenant'] = $this->content_model->get_tenant($id);
+		$data['captcha'] = $this->captcha_model->initiate_captcha();
+		$data['seo_links'] = $this->content_model->get_seo_links();
+		$data['main_content'] = "admin/edit_tenant";
+	
+	
+	
+		$this->load->vars($data);
+		$this->load->view('template/main');
+	}
+	
+	function edit_tenant_details() {
+		$this->form_validation->set_rules('tenant_name', 'Tenant Name', 'trim');
+		
+		if ($this->form_validation->run() == FALSE) { // validation hasn'\t been passed
+			echo "validation error";
+		} else { // passed validation proceed to post success logic
+			$id = $this->uri->segment(3);
+			$this->content_model->edit_tenant($id);
+	
+	
+			
+	
+	
+			redirect("admin/edit_tenant/$id");
+		}
 	}
 
 	function edit_product() {
