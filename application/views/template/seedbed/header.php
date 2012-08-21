@@ -37,9 +37,9 @@
 <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.3/css/jquery.dataTables_themeroller.css">
 
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/base.css">
-<link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/skeleton.css">
+<link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/skeleton.css?123">
 <link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/layout.css">
-<link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/template.css">
+<link rel="stylesheet" href="<?= base_url() ?>css/<?=$this->config_theme?>/template.css?123">
  
 
 
