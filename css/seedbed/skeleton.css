@@ -37,7 +37,15 @@
 #dropdownMenu {
     display:none;
 }
-
+#mainmap {
+	display:block;
+}
+.newsImage {
+	width:230px;
+}
+.newsImage img {
+	width:230px;
+}
 /* Base Grid */
 .container .one.column,
 .container .one.columns                     { width: 40px;  }
@@ -150,6 +158,16 @@
     #dropdownMenu {
     display:block;
 }
+#mainmap {
+	display:none;
+}
+.newsImage {
+	width:150px;
+}
+.newsImage img {
+	width:150px;
+}
+
 .remove-bottom img {
 	
 	width:280px;

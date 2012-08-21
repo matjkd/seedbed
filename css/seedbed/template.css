@@ -413,13 +413,10 @@ ul.unitmenu li ul li a:hover {
 }
 .newsImage {
     float:left;
-    width:230px;
+   
     padding-right:20px;
 }
-.newsImage img {
-    
-    width:230px;
-}
+
 
 
 #box-table-a
