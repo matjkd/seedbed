@@ -100,7 +100,8 @@
 
 
 
-		<div class="sixteen columns mainheading" id="contenttop">
+		<div class="sixteen columns mainheading " id="contenttop">
+		<div class="texture">
 			<h2>
 				<?php
 				if (isset($title)) {
@@ -108,6 +109,7 @@
 				}
 				?>
 			</h2>
+			</div>
 		</div>
 
 		<!--   set size of columns. -->
