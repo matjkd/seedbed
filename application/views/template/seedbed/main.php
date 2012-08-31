@@ -57,22 +57,22 @@
 				<?= $this->load->view('global/seedbed/menu') ?>
 
 			</div>
-			
-<div id="dropdownMenu">
-	<form name="jump1">
-		<select name="myjumpbox"
-			OnChange="location.href=jump1.myjumpbox.options[selectedIndex].value">
-			<option value="<?=base_url()?>" selected>Home</option>
-			<option value="<?=base_url()?>news">News</option>
-			<option value="<?=base_url()?>map">Map</option>
-			<option value="<?=base_url()?>workspaces">Workspaces</option>
-			<option value="<?=base_url()?>mailbox">Virtual Office</option>
-			<option value="<?=base_url()?>tenants">Tenants</option>
-			<option value="<?=base_url()?>terms">terms</option>
-			<option value="<?=base_url()?>contact">Contact</option>
-		</select>
-	</form>
-</div>
+
+			<div id="dropdownMenu">
+				<form name="jump1">
+					<select name="myjumpbox"
+						OnChange="location.href=jump1.myjumpbox.options[selectedIndex].value">
+						<option value="<?=base_url()?>" selected>Home</option>
+						<option value="<?=base_url()?>news">News</option>
+						<option value="<?=base_url()?>map">Map</option>
+						<option value="<?=base_url()?>workspaces">Workspaces</option>
+						<option value="<?=base_url()?>mailbox">Virtual Office</option>
+						<option value="<?=base_url()?>tenants">Tenants</option>
+						<option value="<?=base_url()?>terms">terms</option>
+						<option value="<?=base_url()?>contact">Contact</option>
+					</select>
+				</form>
+			</div>
 		</div>
 	</div>
 
@@ -122,7 +122,7 @@
 
 		<div class="<?= $mainsize ?> columns">
 
-<?=$this->load->view('global/alert')?>
+			<?=$this->load->view('global/alert')?>
 
 			<?= $this->load->view($main_content) ?>
 		</div>
@@ -164,16 +164,15 @@
 				?>
 
 				<?= $contentshort  ?>
-				...<br /> <span style="color:#aaa;"><?=$date_added?> </span>
+				...<br /> <span style="color: #aaa;"><?=$date_added?> </span>
 				<?php 
     }
     endforeach;
-}?><br/><br/>
-<p>
-<!-- Place this code where you want the badge to render. -->
-<a href="//plus.google.com/107837429854897966172?prsrc=3" rel="publisher" style="text-decoration:none;">
-<img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/></a>
-</p>
+				}?>
+				<br /> <br />
+				<p>
+					
+				</p>
 			</div>
 
 
@@ -196,12 +195,13 @@
 						href="mailto:info@seedbedloughton.com">info@seedbedloughton.com</a>
 				</p>
 				<p>
-					Site being developed by <br/><a href="http://www.redstudio.co.uk">redstudio design limited</a><br/>
-					
+					Site being developed by <br /> <a href="http://www.redstudio.co.uk">redstudio
+						design limited</a><br />
 
-					
-					
-					
+
+
+
+
 				</p>
 			</div>
 
@@ -211,6 +211,25 @@
 		</div>
 
 
+	</div>
+	<div id="siteBase">
+		<div class="container">
+		<div class="eight columns">
+			<div class="footermenu">
+				<?= $this->load->view('global/seedbed/menu') ?>
+			</div>
+			</div>
+			
+			<div class="eight columns" style="text-align:right; margin-top:10px;">
+			<!-- Place this code where you want the badge to render. -->
+					<a href="//plus.google.com/107837429854897966172?prsrc=3"
+						rel="publisher" style="text-decoration: none;"> <img
+						src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+"
+						style="border: 0; width: 32px; height: 32px;" />
+					</a>
+			</div>
+			
+		</div>
 	</div>
 
 

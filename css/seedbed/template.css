@@ -297,7 +297,36 @@ root {
 	width: 200px;
 	padding:0px;
 }
+#siteBase {
+	background:#111;
+}
+.footermenu {
+    clear:both;
+    float:left; 
+    padding-top:20px;
+    position:relative; 
+    padding-left:0px;
 
+    font-size: 1.0em;
+    line-height: 1.6em;
+}
+.footermenu ul {
+padding-left:0px;
+    margin-left: 0px;
+}
+.footermenu li {
+    display:inline;
+    padding-left: 0px;
+    padding-right:5px;
+
+}
+
+.footermenu a {
+    text-decoration:none;
+    color: #aaa;
+    border-right:1px #292929;
+
+}
 #footerblock {
 	width: 100%;
 	display: block;
