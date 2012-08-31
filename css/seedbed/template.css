@@ -14,6 +14,8 @@ body {
 	background: #ffffff;
 }
 
+
+
 #fullbackground {
 	position: absolute;
 	z-index: -10;
@@ -55,7 +57,7 @@ root {
 
 .mainheading {
 	margin-top: 8px;
-	background: #1f313f;
+	background: #333C4D;
 	opacity: 0.9;
 	margin-bottom: 8px;
 	-moz-box-shadow: 3px 3px 12px #000000;
@@ -200,7 +202,7 @@ root {
 	display: block;
 	position: relative;
 	color: #ffffff;
-	background-color: #1f313f;
+	background-color: #333C4D;
 	opacity: 0.9;
 	height: 45px;
 	margin-left: 0px;
@@ -332,7 +334,7 @@ padding-left:0px;
 	display: block;
 	position: relative;
 	color: #ffffff;
-	background-color: #1f313f;
+	background-color: #111318;
 	height: 100%;
 	margin-left: 0px;
 	padding-top: 10px;
