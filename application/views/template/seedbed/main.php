@@ -101,7 +101,7 @@
 
 
 		<div class="sixteen columns mainheading " id="contenttop">
-		<div class="texture">
+	
 			<h2>
 				<?php
 				if (isset($title)) {
@@ -109,7 +109,7 @@
 				}
 				?>
 			</h2>
-			</div>
+		
 		</div>
 
 		<!--   set size of columns. -->
@@ -141,6 +141,7 @@
 	</div>
 	<!-- container -->
 	<div class="sixteen columns" id="footerblock">
+	
 		<div class="container">
 			<div class="eight columns">
 				<h3>Latest News</h3>
@@ -209,12 +210,12 @@
 
 
 
-
 		</div>
 
 
 	</div>
 	<div id="siteBase">
+	
 		<div class="container">
 		<div class="eight columns">
 			<div class="footermenu">

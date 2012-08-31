@@ -12,7 +12,7 @@
 
 		<div class="clickhere">
 			<a href="<?=base_url()?>map">
-				<p>Layout showing tenants and availability.</p> Click Here
+				<p>Layout showing tenants and availability.<br/> Click Here</p>
 			</a>
 		</div>
 	</div>
@@ -35,8 +35,8 @@
 		
 		<div class="clickhere">
 		<a href="<?=base_url()?>mailbox">
-			<p>Accomodation address and telephone answering services</p> Click
-			Here
+			<p>Accomodation address and telephone answering services<br/>Click
+			Here</p> 
 		</a>
 	</div>
 	</div>
@@ -59,7 +59,7 @@
 	
 		<div class="clickhere">
 		<a href="<?=base_url()?>workspaces">
-			<p>'Easy In Easy Out' liceses</p> Click Here
+			<p>'Easy In Easy Out' liceses<br/>Click Here</p> 
 		</a>
 	</div>
 	</div>
@@ -81,7 +81,7 @@
 		
 		<div class="clickhere">
 		<a href="<?=base_url()?>contact">
-			<p>Get in contact now.</p> Click Here
+			<p>Get in contact now.<br/>Click Here</p> 
 		</a>
 	</div>
 	</div>
