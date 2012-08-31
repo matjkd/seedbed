@@ -14,60 +14,7 @@ body {
 	background: #ffffff;
 }
 
-/*******************************************/
-/**             FONTS                     **/
-/*******************************************/
 
-@font-face {
-    font-family: 'RobotoRegular';
-    src: url('fonts/Roboto-Regular.eot');
-    src: url('fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Roboto-Regular.woff') format('woff'),
-         url('fonts/Roboto-Regular.ttf') format('truetype'),
-         url('fonts/Roboto-Regular.svg#RobotoRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'RobotoBold';
-    src: url('fonts/Roboto-Bold.eot');
-    src: url('fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Roboto-Bold.woff') format('woff'),
-         url('fonts/Roboto-Bold.ttf') format('truetype'),
-         url('fonts/Roboto-Bold.svg#RobotoBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'RobotoLight';
-    src: url('fonts/Roboto-Light.eot');
-    src: url('fonts/Roboto-Light.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Roboto-Light.woff') format('woff'),
-         url('fonts/Roboto-Light.ttf') format('truetype'),
-         url('fonts/Roboto-Light.svg#RobotoLight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'RobotoMedium';
-    src: url('fonts/Roboto-Medium.eot');
-    src: url('fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Roboto-Medium.woff') format('woff'),
-         url('fonts/Roboto-Medium.ttf') format('truetype'),
-         url('fonts/Roboto-Medium.svg#RobotoMedium') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'RobotoItalic';
-    src: url('fonts/Roboto-Italic.eot');
-    src: url('fonts/Roboto-Italic.eot?#iefix') format('embedded-opentype'),
-         url('fonts/Roboto-Italic.woff') format('woff'),
-         url('fonts/Roboto-Italic.ttf') format('truetype'),
-         url('fonts/Roboto-Italic.svg#RobotoItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 #fullbackground {
 	position: absolute;
@@ -255,7 +202,7 @@ root {
 	display: block;
 	position: relative;
 	color: #ffffff;
-	background-color: #1f313f;
+	background-color: #333C4D;
 	opacity: 0.9;
 	height: 45px;
 	margin-left: 0px;
@@ -387,7 +334,7 @@ padding-left:0px;
 	display: block;
 	position: relative;
 	color: #ffffff;
-	background-color: #333C4D;
+	background-color: #111318;
 	height: 100%;
 	margin-left: 0px;
 	padding-top: 10px;
