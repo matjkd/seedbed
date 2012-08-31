@@ -7,7 +7,7 @@
 	<div style="padding: 0px;">
 
 		<div class="alpha  twelve columns pricebox" >
-			<div style="padding-left: 10px;">
+			<div style="padding: 10px;">
 				<div class="pricelist_title">
 					<h4>Facsimile</h4>
 				</div>
@@ -26,7 +26,7 @@
 		
 		
 		<div class="alpha  twelve columns pricebox" >
-			<div style="padding-left: 10px;">
+			<div style="padding: 10px;">
 				<div class="pricelist_title">
 					<h4>Post</h4>
 				</div>
@@ -40,7 +40,7 @@
 		
 		
 		<div class="alpha  twelve columns pricebox" >
-			<div style="padding-left: 10px;">
+			<div style="padding: 10px;">
 				<div class="pricelist_title">
 					<h4>Conference Room</h4>
 				</div>
@@ -58,7 +58,7 @@
 		</div>
 		
 		<div class="alpha  twelve columns pricebox" >
-			<div style="padding-left: 10px;">
+			<div style="padding: 10px;">
 				<div class="pricelist_title">
 					<h4>Secretarial Services</h4>
 				</div>
@@ -73,7 +73,7 @@
 		</div>
 		
 		<div class="alpha  twelve columns pricebox" >
-			<div style="padding-left: 10px;">
+			<div style="padding: 10px;">
 				<div class="pricelist_title">
 					<h4>Photocopying</h4>
 				</div>
@@ -89,7 +89,7 @@
 		</div>
 		
 		<div class="alpha  twelve columns pricebox" >
-			<div style="padding-left: 10px;">
+			<div style="padding: 10px;">
 				<div class="pricelist_title">
 					<h4>Email</h4>
 				</div>
@@ -103,7 +103,7 @@
 		</div>
 		
 		<div class="alpha  twelve columns pricebox" >
-			<div style="padding-left: 10px;">
+			<div style="padding: 10px;">
 				<div class="pricelist_title">
 					<h4>Scanning</h4>
 				</div>
@@ -117,7 +117,7 @@
 		</div>
 		
 		<div class="alpha  twelve columns pricebox" >
-			<div style="padding-left: 10px;">
+			<div style="padding: 10px;">
 				<div class="pricelist_title">
 					<h4>Binding</h4>
 				</div>

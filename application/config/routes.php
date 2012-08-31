@@ -53,6 +53,7 @@ $route['othersites'] = '/welcome/home';
 $route['services'] = '/welcome/home';
 $route['design'] = '/welcome/home';
 $route['news'] = '/welcome/home';
+$route['eatinghouse'] = '/welcome/home';
 $route['404_override'] = '';
 
 

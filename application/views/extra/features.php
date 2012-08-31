@@ -7,7 +7,7 @@
             <div class="blue_logo"><img src="<?= base_url() ?>images/icons/white/cutlery.png"/></div>
 
             <div class="blue_text">
-                <h4>The Eating House</h4>
+              <h4> <a href="<?=base_url()?>eatinghouse"> The Eating House</a></h4>
                 <p>Hot and cold drinks available on site, all day.</p>
             </div>
         </div>

@@ -133,7 +133,7 @@ $(document).ready(function() {
 	}, function() {
 
 		$(this).stop().animate({
-			backgroundColor : "#077eff",
+			backgroundColor : "#87A6CE",
 			height : '100px',
 			marginBottom : 8,
 			marginTop : 8

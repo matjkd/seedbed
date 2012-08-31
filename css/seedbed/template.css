@@ -58,6 +58,9 @@ root {
 	background: #1f313f;
 	opacity: 0.9;
 	margin-bottom: 8px;
+	-moz-box-shadow: 3px 3px 12px #000000;
+	-webkit-box-shadow: 3px 3px 12px #000000;
+	box-shadow: 3px 3px 12px #000000;
 }
 .pricebox {
 	background: #ddd;
@@ -102,13 +105,17 @@ root {
 }
 
 .bluebox {
-	background-color: #007eff;
+	background-color: #87A6CE;
 	color: #fff;
 	opacity: 0.9;
 	height: 100px;
 	margin-bottom: 8px;
 	margin-top: 8px;
 	position: relative;
+	
+	-moz-box-shadow: 3px 3px 12px #000000;
+	-webkit-box-shadow: 3px 3px 12px #000000;
+	box-shadow: 3px 3px 12px #000000;
 	
 }
 
@@ -273,6 +280,9 @@ root {
 	margin-top: 8px;
 	background-color: #5687b5;
 	position: relative;
+	-moz-box-shadow: 3px 3px 12px #000000;
+	-webkit-box-shadow: 3px 3px 12px #000000;
+	box-shadow: 3px 3px 12px #000000;
 }
 
 .feature_box a,.feature_box h4 {
@@ -298,17 +308,18 @@ root {
 	margin-left: 0px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	border-top:10px solid #9198A0;
 }
 
 #footerblock h3 {
-	color: #007eff;
+	color: #87A6CE;
 }
 #footerblock strong {
 	color: #ffffff;
 }
 
 #footerblock a {
-	color: #007eff;
+	color: #87A6CE;
 }
 
 .services {
@@ -339,7 +350,7 @@ root {
 }
 
 .costoptions {
-	background-color: #007eff;
+	background-color: #87A6CE;
 	position: relative;
 	height: 210px;
 	margin-bottom: 10px;
@@ -353,8 +364,9 @@ root {
 
 .price {
 	height: 35px;
-	background-color: #005cbb;
+	background-color: #5989B6;
 	position: absolute;
+	font-weight:bold;
 	bottom: 0px;
 }
 ul {
@@ -415,6 +427,7 @@ ul.unitmenu li ul li a:hover {
     float:left;
    
     padding-right:20px;
+    
 }
 
 

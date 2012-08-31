@@ -168,7 +168,12 @@
 				<?php 
     }
     endforeach;
-}?>
+}?><br/><br/>
+<p>
+<!-- Place this code where you want the badge to render. -->
+<a href="//plus.google.com/107837429854897966172?prsrc=3" rel="publisher" style="text-decoration:none;">
+<img src="//ssl.gstatic.com/images/icons/gplus-32.png" alt="Google+" style="border:0;width:32px;height:32px;"/></a>
+</p>
 			</div>
 
 
@@ -191,8 +196,12 @@
 						href="mailto:info@seedbedloughton.com">info@seedbedloughton.com</a>
 				</p>
 				<p>
-					Site being developed by <a href="http://www.redstudio.co.uk">redstudio
-						design limited</a>
+					Site being developed by <br/><a href="http://www.redstudio.co.uk">redstudio design limited</a><br/>
+					
+
+					
+					
+					
 				</p>
 			</div>
 

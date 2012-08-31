@@ -55,7 +55,11 @@ class Welcome extends MY_Controller {
 		
 		
 		//log visit to site
+		if($site !=NULL){
+			
 		$this->content_model->log_visit($site);
+		
+		}
 		
 		
 		redirect("http://".$site);

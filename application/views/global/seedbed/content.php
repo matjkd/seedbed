@@ -30,8 +30,9 @@
 				src="https://s3-eu-west-1.amazonaws.com/<?=$this->bucket?>/thumb_<?= $row->news_image ?>" />
 		</div>
 		<?php }?>
+		
 		<?php if($row->category == "news") {?>
-		<em>By <?= $row->added_by ?></em>
+		<em>Bye <?= $row->added_by ?></em>
 				<?php 
 			
 			$datestring = "%D %d%S of %M %Y";
@@ -50,7 +51,10 @@
 <?php }?>
 
     <?= $body ?>
-
+    
+    <?php if($row->menu != "news" && $row->menu != "tenants") {  ?>
+<div class="g-plusone" data-annotation="inline" data-href="<?=base_url()?>/welcome/home/<?=$row->menu?>"></div>
+<?php }?>
 <?php endforeach; ?>
 
 
