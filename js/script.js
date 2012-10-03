@@ -1,3 +1,4 @@
+
 // remap jQuery to $
 (function($) {
 
@@ -141,12 +142,6 @@ $(document).ready(function() {
 		}, 150);
 		$(".clickhere").fadeOut(100);
 	});
-<<<<<<< HEAD
-=======
-$('.slideshow').css("display", "block");
-});
-       
->>>>>>> c188ddcab4c933fb40709654efe15fb1f857614f
 
 	/***************************************************************************
 	 * /* feature box hover /
@@ -425,7 +420,6 @@ $(document).ready(function() {
 
 });
 
-<<<<<<< HEAD
 var map;
 
 var seedbed = new google.maps.LatLng(51.644469, 0.088808);
@@ -493,6 +487,7 @@ function initialize() {
 
   google.maps.event.addDomListener(window, 'load', initialize);
 
-=======
+
+
 $('.slideshow').css("display", "block");
->>>>>>> c188ddcab4c933fb40709654efe15fb1f857614f
+
