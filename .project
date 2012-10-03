@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>46.137.123.166_seedbed</name>
+=======
+	<name>Seedbed</name>
+>>>>>>> c188ddcab4c933fb40709654efe15fb1f857614f
 	<comment></comment>
 	<projects>
 	</projects>
 	<buildSpec>
+<<<<<<< HEAD
 	</buildSpec>
 	<natures>
+=======
+		<buildCommand>
+			<name>com.aptana.editor.php.aptanaPhpBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
+			<name>com.aptana.ide.core.unifiedBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.aptana.editor.php.phpNature</nature>
+		<nature>com.aptana.projects.webnature</nature>
+>>>>>>> c188ddcab4c933fb40709654efe15fb1f857614f
 	</natures>
 </projectDescription>
