@@ -6,6 +6,8 @@
 
 
     <?php
+    
+   
     $is_logged_in = $this->session->userdata('is_logged_in');
     if (!isset($is_logged_in) || $is_logged_in == true) {
         echo "<a href='" . base_url() . "admin/edit/" . $row->content_id . "'>edit this page</a><br/>";
@@ -32,7 +34,7 @@
 		<?php }?>
 		
 		<?php if($row->category == "news") {?>
-		<em>Bye <?= $row->added_by ?></em>
+		<em>By <?= $row->added_by ?></em>
 				<?php 
 			
 			$datestring = "%D %d%S of %M %Y";
