@@ -5,11 +5,11 @@
  
 
     <li><?= anchor('/map', 'Map') ?></li>
-    <li><?= anchor('/workspaces', 'Workspaces') ?></li>
+    <li><?= anchor('/workspaces', 'Terms') ?></li>
         <li><?= anchor('/mailbox', 'Virtual Office') ?></li>
         
-         <li><?= anchor('/tenants', 'Tenants') ?></li>
-          <li><?= anchor('/terms', 'Terms') ?></li>
+        
+          <li><?= anchor('/terms', 'FAQ') ?></li>
     <li><?= anchor('/contact', 'Contact') ?></li>
 
 

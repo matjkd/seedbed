@@ -6,7 +6,7 @@
 			<img src="<?= base_url() ?>images/icons/white/map.png" />
 		</div>
 		<div class="blue_text">
-			<h4>Map of Centre</h4>
+			<h4>Unit Availability</h4>
 
 		</div>
 
@@ -59,7 +59,7 @@
 	
 		<div class="clickhere">
 		<a href="<?=base_url()?>workspaces">
-			<p>'Easy In Easy Out' liceses<br/>Click Here</p> 
+			<p>'Easy In Easy Out' licenses<br/>Click Here</p> 
 		</a>
 	</div>
 	</div>

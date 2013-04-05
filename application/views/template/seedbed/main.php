@@ -65,10 +65,10 @@
 						<option value="<?=base_url()?>" selected>Home</option>
 						<option value="<?=base_url()?>news">News</option>
 						<option value="<?=base_url()?>map">Map</option>
-						<option value="<?=base_url()?>workspaces">Workspaces</option>
+						<option value="<?=base_url()?>workspaces">Terms</option>
 						<option value="<?=base_url()?>mailbox">Virtual Office</option>
 						<option value="<?=base_url()?>tenants">Tenants</option>
-						<option value="<?=base_url()?>terms">terms</option>
+						<option value="<?=base_url()?>terms">faq</option>
 						<option value="<?=base_url()?>contact">Contact</option>
 					</select>
 				</form>

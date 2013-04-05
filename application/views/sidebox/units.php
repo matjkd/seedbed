@@ -16,13 +16,16 @@
 					<?php if($row->occupied > 0) {?>
 					
 					<?php if($row->visible == 1){?>
-					(<?=$row->tenant_name?>)
+					(Occupied)
 					<?php } else { ?>
 					(Occupied)
 					<?php }?>
 					
 					 
-					<?php }?>
+					<?php }
+					else {
+						echo "(Available)";
+					}?>
 			</span></li>
 
 
