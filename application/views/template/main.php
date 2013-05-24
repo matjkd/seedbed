@@ -1,1 +1,1 @@
-<?=$this->load->view('template/'.$config_theme.'/main')?>
+<?=$this->load->view('template/elegant/main')?>

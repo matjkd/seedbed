@@ -86,6 +86,7 @@ class Welcome extends MY_Controller {
 		$data['mainsize'] = $row->mainsize;
 		$data['rightsize'] = $row->rightsize;
 		$data['slideshow'] = $row->slideshow;
+		$data['slidesection'] = $row->slidesection;
 
 		endforeach;
 		$this->load->vars($data);
