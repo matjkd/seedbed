@@ -334,3 +334,183 @@ $(document).ready(function () {
 		trigger: 'hover'
 	});
 });
+
+/*================================================================*/
+/* Validation Functions
+/*================================================================*/
+
+//validate email
+function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+//validate name
+function validateName(name) {
+     var re = /[A-Za-z0-9]{2,40}/;
+    return re.test(name);
+ }
+ 
+ //validate phone  
+    function validatePhone(phone) {
+     var re = /[A-Za-z0-9]{2,40}/;
+    return re.test(phone);
+     }
+
+
+
+/*================================================================*/
+/* Map stuff:
+/* 
+/*================================================================*/
+function unitClick(id, unitID) {
+	// reset block colours
+	$('.shield').stop().animate({
+		opacity : 0.8,
+		color : '#fff'
+	});	
+	
+	$('#' + id).stop().animate({
+		opacity : 0.5,
+		color : '#000'
+	});
+	
+	loadUnit(unitID);
+	
+}
+
+function loadcontact(id) {
+	$("#unitData").load(base_url + "welcome/unitinfo/" + id, function(){
+		  //function executed when load is done.
+		});
+}
+
+function loadUnit(id) {
+	
+	$("#unitData").load(base_url + "welcome/unitinfo/" + id, function(){
+		  //function executed when load is done.
+		});
+	
+	
+}
+function loadContact() {
+	$("#unitData").load(base_url + "welcome/contactajax");
+	
+	
+}
+
+
+/*******************************************************************************
+ * /* passthrough clicker for IE /
+ ******************************************************************************/
+
+function passThrough(e) {
+	$(".clickthrough").each(
+			function() {
+
+				// check if clicked point (taken from event) is inside element
+				var mouseX = e.pageX;
+				var mouseY = e.pageY;
+				var offset = $(this).offset();
+				var width = $(this).width();
+				var height = $(this).height();
+
+				if (mouseX > offset.left && mouseX < offset.left + width
+						&& mouseY > offset.top && mouseY < offset.top + height)
+
+					$(this).click(); // force click event
+
+			});
+}
+
+$(document).ready(function() {
+	
+	$(".contactclick").click(
+		function(){
+			
+			loadContact();
+		}
+	);
+	
+	
+	
+	$(".clickmap").click(
+
+	function() {
+		
+		var parent = this.id;
+		var unitID = $('.' + parent).attr('id');
+		
+		$('.shield').stop().animate({
+			opacity : 0.8,
+		color : '#fff'
+		});
+		$(this).stop().animate({
+			opacity : 0.5,
+		color : '#000'
+
+		}, 150);
+		
+		loadUnit(unitID);
+
+	});
+	
+	/*================================================================*/	
+	//Form Validation
+/*================================================================*/		 
+$('#formemail').tooltip( {
+        title: 'Invalid email address',
+        placement: 'right',
+        trigger: 'manual'
+    });
+    
+     $('#formphone').tooltip( {
+        title: 'Invalid phone number',
+        placement: 'right',
+        trigger: 'manual'
+    });
+
+    $('#formname').tooltip( {
+        title: 'You must enter your name',
+        placement: 'right',
+        trigger: 'manual'
+    });
+
+    $('#callback-form').submit( function() {
+        var validForm = true;
+        // validate email
+        if( validateEmail( $('#formemail').val() ) == false ) {
+            $('#formemail').tooltip('show');
+            validForm = false;
+        }
+        else {
+            $('#formemail').tooltip('hide');
+        }
+        
+        
+         // validate phone
+        if( validatePhone( $('#formphone').val() ) == false ) {
+            $('#formphone').tooltip('show');
+            validForm = false;
+        }
+        else {
+            $('#formphone').tooltip('hide');
+        }
+        
+        // validate name
+        if( validateName( $('#formname').val() ) == false ) {
+         	$('#formname').tooltip('show');
+            validForm = false;	
+         } else {
+            $('#formname').tooltip('hide');
+        }
+       
+        
+        if( validForm ) {
+            message( 'error', 'Ooops', "Access Denied", 3000 );
+        }
+        return false;
+    });
+		 
+
+});

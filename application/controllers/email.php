@@ -81,6 +81,31 @@ class Email extends My_Controller {
             redirect('welcome/main/contact', 'refresh');
         }
     }
+
+function contactform() {
+	
+	$subject = "test";
+	$message = "testing seedbed email";
+	$to = "mat@redstudio.co.uk";
+	$this->send_email($subject, $message, $to);
+	
+	$this->session->set_flashdata('message', 'Your message has been sent. Thank you.');
+    redirect($this->agent->referrer());
+}
+
+function send_email($subject, $message, $to)
+		{
+
+			$config_email = $this -> config_email;
+			$config_company_name = $this -> config_company_name;
+			$this -> postmark -> from($config_email, $config_company_name);
+			$this -> postmark -> to($to);
+
+			//$this->postmark->cc('mat@redstudio.co.uk');
+			$this -> postmark -> subject($subject);
+			$this -> postmark -> message_html($message);
+			$this -> postmark -> send();
+		}
     
     
      function quote() {

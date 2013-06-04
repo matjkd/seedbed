@@ -300,6 +300,12 @@ function unitClick(id, unitID) {
 	
 }
 
+function loadContact() {
+	$("#unitData").load(base_url + "welcome/contactajax");
+	
+	$( "#unitData" ).dialog( "open" );
+}
+
 function loadUnit(id) {
 	
 	$("#unitData").load(base_url + "welcome/unitinfo/" + id, function(){
@@ -395,6 +401,14 @@ function passThrough(e) {
 }
 
 $(document).ready(function() {
+	
+	$(".contactclick").click(
+		function(){
+			alert('test');
+			loadContact();
+		}
+	);
+	
 	$(".shield").click(passThrough);
 
 	$(".clickthrough").click(
@@ -490,4 +504,17 @@ function initialize() {
 
 
 $('.slideshow').css("display", "block");
+
+	
+/*================================================================*/	
+	//activate bootstrap popover
+/*================================================================*/
+	$('body').popover({
+             selector: '[data-toggle="popover"]',
+             trigger: 'hover'
+         });
+ 
+         $('body').tooltip({
+             selector: 'a[rel="tooltip"], [data-toggle="tooltip"]'
+         });
 

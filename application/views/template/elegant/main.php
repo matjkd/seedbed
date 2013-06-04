@@ -98,6 +98,15 @@
 </script>
 </head>
 <body>
+	
+	<div id="myModal"  class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+ 
+  	 <div id="unitData">
+
+		</div>
+
+ 
+</div>
  <!--   hidden input to pass base url to js files-->
 	<input type="hidden" id="baseurl" value="<?= base_url() ?>" />
 	
@@ -221,12 +230,12 @@ I commented and separeated the html so you can apply it to your site/menu system
 
 <!-- begin #page - the container for everything but header -->
 <div id="page" class="clearfix">
-	
+
 <!--add slideshow here-->	
 <?php if($slidesection != "") { ?>	
 <?=$this->load->view('template/elegant/'.$slidesection)?>
 <?php } ?>
-
+	<?=$this->load->view('template/elegant/alert')?>
 <!--add top section here-->
 		<?php
 		if (isset($topsection) && $topsection != NULL) {
@@ -235,6 +244,7 @@ I commented and separeated the html so you can apply it to your site/menu system
 		?>
 	
 		<div class="page-header">
+			
 		<h1><?php
 				if (isset($title)) {
 					echo $title;
@@ -244,8 +254,14 @@ I commented and separeated the html so you can apply it to your site/menu system
 <!--close page-header-->
 
 <div class="main-content container">
+		<div class="row-fluid">
+				<div class="span7">
+						<?= $this->load->view($main_content) ?>	</div>
+				<div class="span5">
+						<?php if(isset($sidebox) && $sidebox != NULL) { $this->load->view('template/elegant/'.$sidebox); } ?>	
+						</div>
+		</div>
 		
-		<?= $this->load->view($main_content) ?>
 <hr>
 		
 		
@@ -350,13 +366,21 @@ I commented and separeated the html so you can apply it to your site/menu system
 </section>
 <!--close section .footer-credits--> 
  <span class="backToTop"><a href="#top"><i class="e-icon-up-open-big"></i></a></span>
+ 
+ 
+
 </div>
 <!-- close #page--> 
 
 
 
 
+
+
+
 		<!-- JS General Site COMBINE AND COMPRESS WHEN YOU FIGURE OUT WHAT YOU WANT TO USE comes with unpacked versions ================ --> 
+		
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script src='<?=base_url() ?>themes/elegant/assets/js/theme-menu.js'></script><!-- menu --> 
 		<script src='<?=base_url() ?>themes/elegant/assets/js/jquery.easing-1.3.min.js'></script><!-- easing --> 
 		<script src='<?=base_url() ?>themes/elegant/assets/js/bootstrap.min.js'></script><!-- bootstrap / custom.js loads --> 

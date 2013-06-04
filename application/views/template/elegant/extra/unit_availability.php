@@ -51,7 +51,7 @@ function convert_to_inches($meters) {
 					<td><?=$row->block[0].$row->number?></td> - 
 					<td><?=$area_f?> square feet (<?=round($area_m,0)?>m<sup>2</sup>) </td>
 					<td>Available</td>
-					<td><p class="text-right last"><a href="#" class="btn custom-btn btn-small btn-very-subtle">Contact Us &rarr;</a></p></td>
+					<td><p class="text-right last"><a href="#" class="btn custom-btn btn-small btn-very-subtle">Contact us about unit <?=$row->block[0].$row->number?> &rarr;</a></p></td>
 					<?php } ?>
 				
 			<?php endforeach;?>	

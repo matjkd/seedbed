@@ -179,9 +179,16 @@ class Welcome extends MY_Controller {
 		$this->load->model('map_model');
 		$data['unit'] = $this->map_model->get_unit($unitId);
 		$this->load->vars($data);
-		$this->load->view('template/seedbed/unitAjax');
+		$this->load->view('template/elegant/unitAjax');
 		
 	}
+	
+	function contactajax() {
+		
+		
+		$this->load->view('template/elegant/contactAjax');
+		
+	} 
 
 	function gallery($gallery) {
 		$data['content'] = $this->content_model->get_gallery($gallery);

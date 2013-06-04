@@ -12,16 +12,18 @@
 */
 
 .clickthrough {
-	width:30px;
-	height:30px;
 	
-	font-weight:bold;
 	font-size:0.8em;
 	
 }
 .shield {
 	color:#fff;
 }
+
+.clickmap:hover {
+	opacity:0.5;
+}
+
 .highlight {background-color: yellow;}
 
 #mainmap {
@@ -29,6 +31,10 @@
     width:650px;
     height:535px;
   background: url('background/mapbackground.png') no-repeat;
+  transform:rotate(0deg);
+-ms-transform:rotate(0deg); /* IE 9 */
+-webkit-transform:rotate(0deg); /* Safari and Chrome */
+ 
 }
 .eblockContainer {
 	top:120px;
@@ -54,17 +60,30 @@
   
 }
 
-.eblock:hover {
-	opacity:0.5;
+
+.dblockContainer {
+	top:335px;
+	left:317px;
+	position:absolute;
+transform:rotate(38deg);
+-ms-transform:rotate(38deg); /* IE 9 */
+-webkit-transform:rotate(38deg); /* Safari and Chrome */
+
 }
+.dblockContainer2 {
+	top:300px;
+	left:345px;
+	position:absolute;
+transform:rotate(38deg);
+-ms-transform:rotate(38deg); /* IE 9 */
+-webkit-transform:rotate(38deg); /* Safari and Chrome */
 
-
-
+}
 .dblock {
    float:left;
     position:relative;
-    width:38px;
-    height:42px;
+    width:18px;
+    height:18px;
       padding-top:8px;
       padding-left:2px;
     background:#0088CC;
@@ -72,48 +91,95 @@
     text-align: center;
 
 }
+#d1 {
+	top:14px;
+}
 
 .dblockLarge {
     float:left;
     position:relative;
-    width:38px;
-    height:42px;
+    width:18px;
+    height:28px;
      padding-top:12px;
     background:#0088CC;
     opacity:0.7;
     text-align: center;
 
 }
-
+.clickthrough {
+	
+	transform:rotate(-90deg);
+-ms-transform:rotate(-90deg); /* IE 9 */
+-webkit-transform:rotate(-90deg); /* Safari and Chrome */
+}
 
 .bblock {
-    position:absolute;
-    width:28px;
-    height:30px;
+    float:left;
+    position:relative;
+    width:18px;
+    height:18px;
      padding-top:5px;
       padding-left:0px;
-    background:url('map/bblock.png') no-repeat;
+    background:#0088CC;
+    opacity:0.7;
+    text-align: center;
+
+}
+.bblockContainer {
+	top:220px;
+	left:185px;
+	position:absolute;
+transform:rotate(38deg);
+-ms-transform:rotate(38deg); /* IE 9 */
+-webkit-transform:rotate(38deg); /* Safari and Chrome */
+
+}
+.bblockContainer2 {
+	top:188px;
+	left:205px;
+	position:absolute;
+transform:rotate(38deg);
+-ms-transform:rotate(38deg); /* IE 9 */
+-webkit-transform:rotate(38deg); /* Safari and Chrome */
+
+}
+.bblockLarge {
+     float:left;
+    position:relative;
+    width:18px;
+    height:24px;
+    padding-top:9px;
+   background:#0088CC;
     opacity:0.7;
     text-align: center;
 
 }
 
-.bblockLarge {
-    position:absolute;
-    width:37px;
-    height:39px;
-    padding-top:9px;
-    background:url('map/bblockLarge.png') no-repeat;
-    opacity:0.7;
-    text-align: center;
+.ablockContainer  {
+	top:298px;
+	left:93px;
+	position:absolute;
+transform:rotate(40deg);
+-ms-transform:rotate(40deg); /* IE 9 */
+-webkit-transform:rotate(40deg); /* Safari and Chrome */
+
+}
+.cblockContainer  {
+	top:400px;
+	left:233px;
+	position:absolute;
+transform:rotate(40deg);
+-ms-transform:rotate(40deg); /* IE 9 */
+-webkit-transform:rotate(40deg); /* Safari and Chrome */
 
 }
 .ablock, .cblock {
-    position:absolute;
-    width:69px;
-    height:74px;
+   float:left;
+    position:relative;
+    width:35px;
+    height:44px;
       padding-top:26px;
-    background:url('map/ablock.png') no-repeat;
+    background:#0088CC;
     opacity:0.7;
     text-align: center;
 
@@ -125,45 +191,11 @@
 
 
 
-#d14 {    top:258px;    left:344px; }
-
-#d13 {    top:270px;    left:358px; }
-#d12 {    top:282px;    left:372px; }
-#d11 {    top:294px;    left:386px; }
-#d10 {    top:306px;    left:400px; }
-#d9 {    top:318px;    left:414px; }
-#d8 {    top:330px;    left:428px; }
-
-#d1 {    top:297px;    left:313px; }
-#d2 {    top:304px;    left:331px; }
-#d3 {    top:316px;    left:345px; }
-#d4 {    top:328px;    left:359px; }
-#d5 {    top:340px;    left:373px; }
-#d6 {    top:352px;    left:387px; }
-#d7 {    top:364px;    left:401px; }
-
-#b10 {    top:162px;    left:212px; }
-#b1 {    top:192px;    left:186px; }
-#b2 {    top:204px;    left:200px; }
-#b3 {    top:216px;    left:214px; }
-#b4 {    top:228px;    left:228px; }
-#b5 {    top:240px;    left:242px; }
-
-#b9 {    top:175px;    left:218px; }
-#b8 {    top:187px;    left:232px; }
-#b7 {    top:199px;    left:246px; }
-#b6 {    top:211px;    left:260px; }
 
 
-#a4 {    top:269px;    left:86px; }
-#a3 {    top:292px;    left:114px; }
-#a2 {    top:315px;    left:142px; }
-#a1 {    top:338px;    left:170px; }
 
 
-#c3 {    top:379px;    left:216px; }
-#c2 {    top:402px;    left:244px; }
-#c1 {    top:425px;    left:272px; }
+
 /* #Tablet (Portrait)
 ================================================== */
 

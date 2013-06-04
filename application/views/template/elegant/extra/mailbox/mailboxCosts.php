@@ -1,6 +1,4 @@
-<div class="page-header">
-		<h1>Virtual Office</h1>
-</div>
+
 <!--close page-header-->
 <div class="main-content">
 <div class="container">
@@ -20,7 +18,7 @@
 						</div>
 						
 					<ul class="features">
-						<li class="select" title="Sign Up"> <a href="#" class="btn btn-large  btn-primary">Choose <i class="icon-check icon-white"></i></a> </li>
+						<li class="select" title="Sign Up">  <div class="btn btn-large  btn-primary"> <i class="icon-check icon-white"></i></div> </li>
 					</ul>
 				</div>
 			</div>
@@ -39,7 +37,7 @@
 						individual company name</p>
 						</div>
 					<ul class="features">	
-						<li class="select" title="Sign Up"> <a href="#" class="btn btn-large  btn-primary">Choose <i class="icon-check icon-white"></i></a> </li>
+						<li class="select" title="Sign Up">  <div class="btn btn-large  btn-primary"> <i class="icon-check icon-white"></i></div> </li>
 					</ul>
 				</div>
 			</div>
@@ -57,7 +55,7 @@
 						</div>
 						
 					<ul class="features">
-						<li class="select" title="Sign Up"> <a href="#" class="btn btn-large btn-primary">Choose <i class="icon-check icon-white"></i></a> </li>
+						<li class="select" title="Sign Up">  <div class="btn btn-large  btn-primary"> <i class="icon-check icon-white"></i></div> </li>
 					</ul>
 				</div>
 			</div>
@@ -76,7 +74,7 @@
 					<ul class="features">
 						
 						
-						<li class="select" title="Sign Up"> <a href="#" class="btn btn-large  btn-primary">Choose <i class="icon-check icon-white"></i></a> </li>
+						<li class="select" title="Sign Up"> <div class="btn btn-large  btn-primary"> <i class="icon-check icon-white"></i></div> </li>
 					</ul>
 				</div>
 			</div>
