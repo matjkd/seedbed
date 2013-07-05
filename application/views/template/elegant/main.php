@@ -49,7 +49,7 @@
 		<link href="<?=base_url() ?>themes/elegant/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 		<link href="<?=base_url() ?>themes/elegant/assets/css/theme.reset.min.css" rel="stylesheet" type="text/css"/>
 		<link href="<?=base_url() ?>themes/elegant/assets/css/style.css" rel="stylesheet" type="text/css"/>
-
+<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/seedbed/map.css">
 		
 		
 		<link rel="stylesheet" type="text/css" media="print" href="<?=base_url() ?>themes/elegant/assets/css/print.css" />
@@ -65,7 +65,7 @@
 		<script>window.jQuery || document.write('<script src="<?=base_url() ?>themes/elegant/assets/js/jquery-1.9.1.min.js"><\/script>')
 </script>
 
-<?php if($slidesection != "") { ?>	
+<?php if(isset($slidesection)) { if($slidesection != "") { ?>	
 
 
 		<!--animated slider AND loading note two different scripts one for shitty browsers and one for modern --> 
@@ -73,7 +73,7 @@
 <script src='<?=base_url() ?>themes/elegant/assets/js/sequence-greater-than-ie-8.jquery-min.js'></script>
 <!--<![endif]-->
 <!--[if lte IE 8]><script src='<?=base_url() ?>themes/elegant/assets/js/sequence-less-than-ie-8.jquery-min.js'></script><!--<![endif]-->
-		<?php } ?>
+		<?php } } ?>
 		<!-- Add to HEAD after style sheet http://modernizr.com/docs/#installing  ================ -->
 		<script src="<?=base_url() ?>themes/elegant/assets/js/modernizr.custom.js?v=2.6.2"></script>
 		
@@ -162,18 +162,13 @@ I commented and separeated the html so you can apply it to your site/menu system
 																
 														<li class="divider"></li><!--divider -->
 														
-														<li class="nav-header">Follow Us!</li><!--nav-header -->
+														<li class="nav-header">Downloads</li><!--nav-header -->
 														
-														<li>
-																<div class="social clearfix">
-																		<a class="fc-webicon rss round" href="#" title="RSS"></a>
-																		<a class="fc-webicon facebook round" href="#" title="Facebook"></a>
-																		<a class="fc-webicon twitter  round" href="#" title="Twitter"></a>
-																		<a class="fc-webicon skype round" href="#" title="Skype"></a>
-																		<a class="fc-webicon dribbble round" href="#" title="dribble"></a>
-																		<a class="fc-webicon linkedin round" href="#" title="Skype"></a>
-																		<a class="fc-webicon pinterest round" href="#" title="pinterest"></a>
-																</div><!-- close div .social-->
+														<li class=" visible-desktop ">
+															 <a href="http://www.seedbedloughton.com/welcome/tenant_form"><i class="icon-download-alt icon-white"></i> Tenant Application Form</a>
+														</li>
+														<li class="visible-desktop ">
+															  <a href="http://www.seedbedloughton.com/welcome/mailbox_form"><i class="icon-download-alt icon-white"></i> Virtual Office Application Form</a> 
 														</li>
 													
 														
@@ -185,14 +180,7 @@ I commented and separeated the html so you can apply it to your site/menu system
 									
 										<li class="divider-vertical"></li>
 										
-										<li class="search-wrapper">
-												<form action="someaction.php" method="post">
-														<div id="search-trigger">
-																<i class="e-icon-search"></i>
-														</div>
-														<input placeholder="search + enter" type="text">
-												</form>
-										</li>
+										
 																</ul><!-- close nav accordmobile-->
 						</div>
 						<!--/.nav-collapse -->
@@ -232,7 +220,7 @@ I commented and separeated the html so you can apply it to your site/menu system
 <div id="page" class="clearfix">
 
 <!--add slideshow here-->	
-<?php if($slidesection != "") { ?>	
+<?php if(isset($slidesection) && $slidesection != "") { ?>	
 <?=$this->load->view('template/elegant/'.$slidesection)?>
 <?php } ?>
 	<?=$this->load->view('template/elegant/alert')?>
@@ -250,17 +238,31 @@ I commented and separeated the html so you can apply it to your site/menu system
 					echo $title;
 				}
 				?></h1>
-</div>
+</div> 
 <!--close page-header-->
 
 <div class="main-content container">
+		
+	<?php if(!isset($sidebox) || $sidebox == "") { ?>
+		<div class="row-fluid">
+				<div class="span12">
+						<?= $this->load->view($main_content) ?>	
+			</div>
+				
+		</div>
+		
+		<?php } if(isset($sidebox) && $sidebox != NULL) { ?>
+	
 		<div class="row-fluid">
 				<div class="span7">
-						<?= $this->load->view($main_content) ?>	</div>
+					<?= $this->load->view($main_content) ?>	</div>
 				<div class="span5">
 						<?php if(isset($sidebox) && $sidebox != NULL) { $this->load->view('template/elegant/'.$sidebox); } ?>	
 						</div>
 		</div>
+		
+		
+		<?php } ?>
 		
 <hr>
 		
@@ -286,7 +288,7 @@ I commented and separeated the html so you can apply it to your site/menu system
 						<div class="span3">
 								<section>
 										<h4>Contact Us</h4>
-										<p>EFI (Loughton) Limited<br>
+										<p>
 												The Loughton Seedbed Centre<br>
 												Langstone Road,<br>
 												Loughton<br>
@@ -297,18 +299,7 @@ I commented and separeated the html so you can apply it to your site/menu system
 								</section>
 								<!--close section-->
 								
-								<section>
-										<h4>Follow Us</h4>
-										<ul class="social">
-												<li><a class="fc-webicon rss round" href="#" title="RSS"></a></li>
-												<li><a class="fc-webicon facebook round" href="#" title="Facebook"></a></li>
-												<li><a class="fc-webicon twitter round" href="#" title="Twitter"></a></li>
-												<li><a class="fc-webicon skype round" href="#" title="Skype"></a></li>
-												<li><a class="fc-webicon dribbble round" href="#" title="dribble"></a></li>
-												<li><a class="fc-webicon linkedin round" href="#" title="Skype"></a></li>
-										</ul>
-								</section>
-								<!--close section-->
+								
 						</div>
 						<!-- close .span3 --> 
 						
@@ -317,12 +308,21 @@ I commented and separeated the html so you can apply it to your site/menu system
 								<section>
 										<h4>Stay Updated</h4>
 										<p>Sign up for our newsletter. We won't share your email address.</p>
-												<form action="yourscript.php" method="post">
+												
+										
+										<form action="http://redstudio.us1.list-manage1.com/subscribe/post?u=07f8348178863dab1d4d377a3&amp;id=8860199502" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+										
 										<div class="input-append append-fix custom-append row-fluid">
-											<input type="email" class="span8" placeholder="Email Address" name="email" />
-														<button class="btn btn-primary">Sign Up</button>
+											<input type="email" class="span8" placeholder="Email Address" name="EMAIL" id="mce-EMAIL" placeholder="email address" required  placeholder="Enter Your Email"/>
+														
+														<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"  class="btn btn-primary">
 
-										</div></form>
+										</div>	
+											
+											
+										
+										
+									</form>
 										<!--close input-append--> 
 								</section>
 								<!--close section-->
@@ -358,8 +358,8 @@ I commented and separeated the html so you can apply it to your site/menu system
 		<div class="container">
 				<ul class="clearfix">
 						<li>© 2013 EFI (Loughton) Limited. All rights reserved.</li>
-						<li><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
+						<li><a href="http://www.redstudio.co.uk">Developed my Redstudio Design Limited</a></li>
+						
 				</ul>
 		</div>
 		<!--close footer-credits container--> 

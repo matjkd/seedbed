@@ -183,10 +183,18 @@ class Welcome extends MY_Controller {
 		
 	}
 	
-	function contactajax() {
+	function contactajax($id = NULL) {
 		
+		$data = array();
 		
+		if($id != NULL)
+		{
+			$data['unitID'] = $id;
+		}
+
+		$this->load->vars($data);
 		$this->load->view('template/elegant/contactAjax');
+			
 		
 	} 
 
@@ -228,6 +236,8 @@ class Welcome extends MY_Controller {
 		}
 		$id = 'login';
 		$data['content'] = $this->content_model->get_content($id);
+		
+		$this->get_content_data($id);
 		$data['main_content'] = "user/login_form";
 		$data['title'] = "Login";
 

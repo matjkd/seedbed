@@ -5,7 +5,7 @@
 <?php $tenantArray[$row2->tenant_id] = $row2->tenant_name; ?>
 
 <?php endforeach;?>
-<div style="background:#fff; padding:10px;">
+<div style="background:#fff;">
 <ul id="unitmenu" class="unitmenu noaccordion expandfirst">
 	<?php foreach($blockArray as $block):?>
 

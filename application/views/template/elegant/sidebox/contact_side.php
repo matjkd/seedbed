@@ -1,5 +1,4 @@
 
- <div id="map_canvas" style="width:460px;height:400px;"></div>
  <h3>How to find us.</h3>
  <h4>By Train</h4>
 <strong>Our nearest station is Debden, on the Central line.</strong><br/>

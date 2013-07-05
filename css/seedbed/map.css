@@ -28,6 +28,7 @@
 
 #mainmap {
     position:relative;
+    margin: 0 auto;
     width:650px;
     height:535px;
   background: url('background/mapbackground.png') no-repeat;
@@ -188,7 +189,9 @@ transform:rotate(40deg);
 	  background:none;
 }
 
-
+.available {
+	background:rgb(45, 65, 109);
+}
 
 
 

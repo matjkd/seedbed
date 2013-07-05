@@ -390,6 +390,10 @@ function loadUnit(id) {
 	$("#unitData").load(base_url + "welcome/unitinfo/" + id, function(){
 		  //function executed when load is done.
 		});
+}
+
+function loadContactUnit(id) {
+	$("#unitData").load(base_url + "welcome/contactajax/" + id);
 	
 	
 }
@@ -422,8 +426,23 @@ function passThrough(e) {
 
 			});
 }
-
+var available = "";
 $(document).ready(function() {
+	
+	if ($("div.clickmap").length > 0) {
+		
+	
+	$("div.light").each(function() {
+		
+ 		available = $(this).attr('id');
+ 		available = available.replace('light_', '');
+ 		
+		$('#' + available).addClass('available');
+		
+	});
+	
+	
+	}
 	
 	$(".contactclick").click(
 		function(){
@@ -434,8 +453,9 @@ $(document).ready(function() {
 	
 	
 	
+	
 	$(".clickmap").click(
-
+	//var backcolor = $(this).css("background-color");
 	function() {
 		
 		var parent = this.id;
@@ -454,6 +474,34 @@ $(document).ready(function() {
 		loadUnit(unitID);
 
 	});
+	
+	$(".clickunit").click(
+
+	function() {
+		
+		var parent = $(this).parent().attr('id');
+		var parent = parent.replace('click_', '');
+		
+		var unitID = $('.' + parent).attr('id');
+		
+		$('.shield').stop().animate({
+			opacity : 0.8,
+		color : '#fff'
+		});
+		$('#' + parent).stop().animate({
+			opacity : 0.5,
+		color : '#000'
+
+		}, 150);
+		
+		loadContactUnit(parent);
+		
+		
+		
+
+
+	});
+	
 	
 	/*================================================================*/	
 	//Form Validation

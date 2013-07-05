@@ -1,4 +1,4 @@
-<table id="box-table-a" style="background:#fff;">
+<table id="box-table-a">
 	<thead>
 		<tr>
 			<th>Tenant Name</th>

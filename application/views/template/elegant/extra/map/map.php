@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="<?= base_url() ?>css/seedbed/map.css">
+
 
 
 
@@ -81,5 +81,34 @@
 </div>
 </div>
 
+<div style="display:none;">
+<?php $blockArray = array('A', 'B', 'C', 'D', 'E');?>
+<?php foreach($blockArray as $block):?>
+<?php foreach($units as $row):?>
+
+			<?php if($row->block[0] == $block) {?>
+
+			<li class="<?= strtolower($row->block[0]).$row->number?> visible<?=$row->visible?>"
+				id="<?=$row->unit_id?>"> <a href="#myModal"  data-toggle="modal"><span class="clicky"
+				onclick="unitClick('<?php echo strtolower($row->block[0]).$row->number;?>', '<?=$row->unit_id?>')">
+					<?=$row->block[0].$row->number?> - <?=round($row->width, 2)?>m x <?=round($row->length, 2)?>m
+					<?php if($row->occupied > 0) {?>
+					
+					<?php if($row->visible == 1){?>
+					(Occupied)
+					<?php } else { ?>
+					(Occupied)
+					<?php }?>
+					
+					 
+					<?php }
+					else {
+						echo "(Available)<div class='light' id='light_".strtolower($row->block[0]).$row->number."'>&nbsp</div>";
+					}?>
+			</span></a></li>
 
 
+			<?php } ?>
+			<?php endforeach;?>
+<?php endforeach;?>
+</div>

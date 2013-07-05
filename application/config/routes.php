@@ -40,10 +40,10 @@
 
 $route['default_controller'] = "welcome";
 $route['about'] = '/welcome/home';
-$route['workspaces'] = '/welcome/home';
 $route['terms'] = '/welcome/home';
+$route['faq'] = '/welcome/home';
 $route['tenants'] = '/welcome/home';
-$route['mailbox'] = '/welcome/home';
+$route['virtualoffice'] = '/welcome/home';
 $route['map'] = '/welcome/map';
 $route['contact'] = '/welcome/home';
 $route['spaces'] = '/welcome/home';

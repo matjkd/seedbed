@@ -19,6 +19,14 @@
             <div class="input-prepend"> <span class="add-on"><i class="icon-envelope"></i></span>
               <input class="span8" id="formemail" type="text" name="email" placeholder="Email">
             </div>
+            
+            <?php if(isset($unitID)) { ?>
+            <div class="input-prepend"> <span class="add-on"><i class="icon-map-marker"></i></span>
+              <input class="span8" id="formemail" type="text" name="unit" placeholder="unit" value="<?=$unitID?>">
+            </div>
+            	
+            	
+            	<?php } ?>
           </div>
           <div class="span6">
            

@@ -48,10 +48,13 @@ function convert_to_inches($meters) {
 					
 					?>
 					<tr>
-					<td><?=$row->block[0].$row->number?></td> - 
+					<td><?=$row->block[0].$row->number?></td>  
 					<td><?=$area_f?> square feet (<?=round($area_m,0)?>m<sup>2</sup>) </td>
 					<td>Available</td>
-					<td><p class="text-right last"><a href="#" class="btn custom-btn btn-small btn-very-subtle">Contact us about unit <?=$row->block[0].$row->number?> &rarr;</a></p></td>
+					<td>
+						
+						
+						<p class="text-right last" id="click_<?=strtolower($row->block[0]).$row->number?>" ><a  href="#myModal"  data-toggle="modal" class="btn custom-btn btn-small btn-very-subtle clickunit">Contact us about unit <?=$row->block[0].$row->number?> &rarr;</a></p></td>
 					<?php } ?>
 				
 			<?php endforeach;?>	

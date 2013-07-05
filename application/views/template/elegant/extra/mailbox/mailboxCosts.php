@@ -12,14 +12,14 @@
 						<li class="price primary-color-bg"> <i>£</i>45.00 <span>per month + VAT </span></li>
 					</ul>
 					<div class="featureP">
-						<p>Accomodation address only
+						<p>Accomodation address only<br/>
 						 Mail can be posted on
 						 or collected by customer
 						</div>
 						
-					<ul class="features">
-						<li class="select" title="Sign Up">  <div class="btn btn-large  btn-primary"> <i class="icon-check icon-white"></i></div> </li>
-					</ul>
+				<ul class="features">
+						<li class="select" title="Download Application form"> <a href="http://www.seedbedloughton.com/welcome/mailbox_form" class="btn btn-large">application form <i class="icon-download-alt icon-white"></i></a> </li>	
+						</ul>
 				</div>
 			</div>
 			<!--close .option1 -->
@@ -32,13 +32,13 @@
 					<div class="featureP">
 						<p><strong>As level 1 plus</strong> <br/>
 						Telephone Answering service 
-						 with dedicated telephone line
+						 with dedicated telephone line<br/>
 						 Calls answered as 
 						individual company name</p>
 						</div>
-					<ul class="features">	
-						<li class="select" title="Sign Up">  <div class="btn btn-large  btn-primary"> <i class="icon-check icon-white"></i></div> </li>
-					</ul>
+					<ul class="features">
+						<li class="select" title="Download Application form"> <a href="http://www.seedbedloughton.com/welcome/mailbox_form" class="btn btn-large">application form <i class="icon-download-alt icon-white"></i></a> </li>	
+						</ul>
 				</div>
 			</div>
 			<!--close .option2 -->
@@ -55,8 +55,8 @@
 						</div>
 						
 					<ul class="features">
-						<li class="select" title="Sign Up">  <div class="btn btn-large  btn-primary"> <i class="icon-check icon-white"></i></div> </li>
-					</ul>
+						<li class="select" title="Download Application form"> <a href="http://www.seedbedloughton.com/welcome/mailbox_form" class="btn btn-large">application form <i class="icon-download-alt icon-white"></i></a> </li>	
+						</ul>
 				</div>
 			</div>
 			<!--close .option3 -->
@@ -72,10 +72,8 @@
 						 <strong>2 hours</strong> Conference room hire per month</p>
 						</div>
 					<ul class="features">
-						
-						
-						<li class="select" title="Sign Up"> <div class="btn btn-large  btn-primary"> <i class="icon-check icon-white"></i></div> </li>
-					</ul>
+						<li class="select" title="Download Application form"> <a href="http://www.seedbedloughton.com/welcome/mailbox_form" class="btn btn-large">application form <i class="icon-download-alt icon-white"></i></a> </li>	
+						</ul>
 				</div>
 			</div>
 			<!--close .option4 --> 
@@ -83,7 +81,7 @@
 		<!--close row-fluid pricingTable div -->
 		
 <section class="call-to-action">
-<h2>So what are you waiting for? This is it.</h2> <a class="btn btn-large btn-inverse custom-btn" href="#">So be it <i class=" e-icon-forward"></i></a>
+<h2>Scroll Down for more information.</h2> 
 </section><!--close .call-to-action-->
 
 

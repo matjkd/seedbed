@@ -84,6 +84,11 @@ class Email extends My_Controller {
 
 function contactform() {
 	
+	$name = $this->input->post('name');
+	$phone = $this->input->post('phone');
+	$email = $this->input->post('email');
+	$message = $this->input->post('message');
+	
 	$subject = "test";
 	$message = "testing seedbed email";
 	$to = "mat@redstudio.co.uk";
