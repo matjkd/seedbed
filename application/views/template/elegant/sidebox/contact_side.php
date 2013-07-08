@@ -23,4 +23,4 @@ exit staying on the A121 towards Loughton. After about 1 and ¼ miles you will r
 Lane (A1168). Drive for just over a mile you will drive under Debden station railway
 bridge keep going a short distance until you reach the traffic lights. Turn left at the
 traffic lights into Langston Road, we are 400 metres down on the right. Journey time
-is around ten minutes in a car from the M25 exit.</p>
+is around 10 minutes in a car from the M25 exit.</p>

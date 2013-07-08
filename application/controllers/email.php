@@ -88,9 +88,18 @@ function contactform() {
 	$phone = $this->input->post('phone');
 	$email = $this->input->post('email');
 	$message = $this->input->post('message');
+$unit = $this->input->post('unit');
+	if($unit != NULL) {
 	
-	$subject = "test";
-	$message = "testing seedbed email";
+		$message = $name."(".$email.") has filled in your contact form regarding Unit ".$unit." :<br/>".$message;
+	} else {
+		$message = $name."(".$email.") has filled in your contact form:<br/>".$message;
+	}
+	
+	$subject = "Seedbed Contact Form";
+	
+	
+	
 	$to = "mat@redstudio.co.uk";
 	$this->send_email($subject, $message, $to);
 	

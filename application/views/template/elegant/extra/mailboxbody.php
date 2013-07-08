@@ -59,23 +59,26 @@
 	<!-- class "equal" to make these [class*="span"] all equalheights -->
 	<div class="span12" style="height: 190px;">
 		<div class="content">
+			<div class="span6">
 			<h3>Conference Room</h3>
-			<p>
-			<img class="alignleft" src="https://s3-eu-west-1.amazonaws.com/seedbed/IMG_7060_1_2_500.jpg" alt="conference room">
 			
-			<span class="lead">Available for Meetings/Training or Interviews, and can accomodate up to 10 people.</span>
+			<img class="alignleft" src="https://s3-eu-west-1.amazonaws.com/seedbed/photos/D8613-03.jpg" alt="conference room">
+			</div>
+			<div class="span6">
+				
+			<span class="lead">Available for Meetings, Training or Interviews, and can accomodate up to 10 people.</span>
 			
 			<br/><br/>Additional facilities include:
 
 <ul>
 	<li>Presentation Materials</li>
-	<li>Refreshments and/or Caterings</li>
+	<li>Refreshments and/or Catering</li>
 	<li>Photocopier</li>
 	<li>Fax Machine</li>
 	<li>Telephone</li>
 	<li>Wi-Fi Connection</li>
 </ul>
-			</p>
+			</div>
 		</div>
 
 		

@@ -33,7 +33,7 @@ function convert_to_inches($meters) {
 						<tr>
 								<th>Unit</th>
 								<th>Size</th>
-								<th>Availiability</th>
+								
 								<th>Contact</th>
 						</tr>
 				</thead>
@@ -49,8 +49,8 @@ function convert_to_inches($meters) {
 					?>
 					<tr>
 					<td><?=$row->block[0].$row->number?></td>  
-					<td><?=$area_f?> square feet (<?=round($area_m,0)?>m<sup>2</sup>) </td>
-					<td>Available</td>
+					<td><?=$area_f?> sq.ft. (<?=round($area_m,0)?>m<sup>2</sup>) </td>
+					
 					<td>
 						
 						

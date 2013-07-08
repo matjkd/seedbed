@@ -52,7 +52,7 @@ class Admin extends MY_Controller {
 	}
 
 	function assign_tenants() {
-		$data['main_content'] = "admin/assign_tenants";
+		$data['main_content'] = "template/elegant/admin/assign_tenants";
 		$data['pages'] = $this->content_model->get_all_content();
 		 
 		//get unit infor for map

@@ -5,13 +5,20 @@
 <?php $tenantArray[$row2->tenant_id] = $row2->tenant_name; ?>
 
 <?php endforeach;?>
-<div style="background:#fff;">
-<ul id="unitmenu" class="unitmenu noaccordion expandfirst">
-	<?php foreach($blockArray as $block):?>
+<div style="background:#fff; padding:10px;">
 
-	<li style="position: static;"><a id="<?=$block?>" href="">Block <?=$block?>
-	</a>
-		<ul style="display: block;">
+
+<h2 class="primary-color">Tenant Assignment </h2>
+						<div class="accordion" id="accordion2">
+							<?php foreach($blockArray as $block):?>
+								<div class="accordion-group">
+										<div class="accordion-heading">
+												<h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?=$block?>"><i class="e-icon-up-open-big"></i> Block <?=$block?></a></h3>
+										</div>
+										<!--/ .accordion-heading-->
+										<div id="collapse<?=$block?>" class="accordion-body collapse ">
+												<div class="accordion-inner">
+														<ul style="display: block;">
 			<?php foreach($units as $row):?>
 
 			<?php if($row->block[0] == $block) {?>
@@ -34,7 +41,14 @@
 			<?php } ?>
 			<?php endforeach;?>
 		</ul>
-	</li>
-	<?php endforeach;?>
-</ul>
-</div>
+												</div>
+												<!--/ .accordion-inner-->
+										</div>
+										<!--/ .accordion-body-->
+								</div>
+								<!--/ .accordion-group-->
+								<?php endforeach;?>
+								
+								
+						</div>
+					</div>
