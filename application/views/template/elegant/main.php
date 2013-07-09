@@ -72,12 +72,22 @@
 <!--[if gt IE 8]><!-->
 <script src='<?=base_url() ?>themes/elegant/assets/js/sequence-greater-than-ie-8.jquery-min.js'></script>
 <!--<![endif]-->
-<!--[if lte IE 8]><script src='<?=base_url() ?>themes/elegant/assets/js/sequence-less-than-ie-8.jquery-min.js'></script><!--<![endif]-->
+
+
+<!--[if lte IE 8]><script src='<?=base_url() ?>themes/elegant/assets/js/sequence-less-than-ie-8.jquery-min.js'></script>
+	
+	
+	
+	<!--<![endif]-->
 		<?php } } ?>
 		<!-- Add to HEAD after style sheet http://modernizr.com/docs/#installing  ================ -->
 		<script src="<?=base_url() ?>themes/elegant/assets/js/modernizr.custom.js?v=2.6.2"></script>
 		
-		
+		<!--[if lte IE 8]>
+	
+	<link href="<?=base_url() ?>themes/elegant/assets/css/ie8.css" rel="stylesheet" type="text/css"/>
+	
+	<!--<![endif]-->
 		
 
 		
@@ -358,7 +368,7 @@ I commented and separeated the html so you can apply it to your site/menu system
 		<div class="container">
 				<ul class="clearfix">
 						<li>© 2013 EFI (Loughton) Limited. All rights reserved.</li>
-						<li><a href="http://www.redstudio.co.uk">Developed my Redstudio Design Limited</a></li>
+						<li><a href="http://www.redstudio.co.uk">Developed by Redstudio Design Limited</a></li>
 						
 				</ul>
 		</div>
@@ -398,6 +408,11 @@ I commented and separeated the html so you can apply it to your site/menu system
 
 		<!--initialize scripts / custom scripts--> 
 		<script src='<?=base_url() ?>themes/elegant/assets/js/custom.js'></script> 
+		
+		<!--[if lte IE 8]>
+	<script src='<?=base_url() ?>themes/elegant/assets/js/jquery.corner.js'></script> 
+	<script src='<?=base_url() ?>themes/elegant/assets/js/ie8.js'></script> 
+		<!--<![endif]-->
 		
 		
 </body>

@@ -7,28 +7,29 @@
         <h3 id="myModalLabel">Get in Contact</h3>
       </div>
       <div class="modal-body">
-        <div class="row-fluid">
-          <div class="span6">
-            <p> Enter Your details </p>
-            <div class="input-prepend"> <span class="add-on"><i class="icon-user"></i></span>
-              <input class="span8" id="formname" type="text" name="name" placeholder="Name">
+        <div class="row">
+          <div class="span3">
+            <p> Enter Your details</p>
+            <div class=" input-prepend"> <span class="add-on"><i class="icon-user"></i></span>
+              <input style="width:180px" class="" id="formname" type="text" name="name" placeholder="Name">
             </div>
-            <div class="input-prepend"> <span class="add-on"><i class="icon-phone"></i></span>
-              <input class="span8" id="formphone" type="text" name="phone" placeholder="Phone Number">
+            
+            <div class="input-prepend" style="clear:both;"> <span class="add-on"><i class="icon-phone"></i></span>
+              <input style="width:180px" class="" id="formphone" type="text" name="phone" placeholder="Phone Number">
             </div>
-            <div class="input-prepend"> <span class="add-on"><i class="icon-envelope"></i></span>
-              <input class="span8" id="formemail" type="text" name="email" placeholder="Email">
+            <div class=" input-prepend"> <span class="add-on"><i class="icon-envelope"></i></span>
+              <input style="width:180px" class="" id="formemail" type="text" name="email" placeholder="Email">
             </div>
             
             <?php if(isset($unitID)) { ?>
             <div class="input-prepend"> <span class="add-on"><i class="icon-map-marker"></i></span>
-              <input class="span8" id="formemail" type="text" name="unit" placeholder="unit" value="<?=$unitID?>">
+              <input style="width:180px" class="" id="formemail" type="text" name="unit" placeholder="unit" value="<?=$unitID?>">
             </div>
             	
             	
             	<?php } ?>
           </div>
-          <div class="span6">
+          <div class="span2">
            
            <p><?= form_label('Message') ?></p>
     <p class="form_message">

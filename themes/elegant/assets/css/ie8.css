@@ -1,0 +1,45 @@
+.btn.custom-btn.btn-large {
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	padding-right: 30px;
+	padding-left: 30px;
+	behavior: url('js/PIE.htc');
+}
+
+#mainmap {
+
+	background: url('background/mapbackgroundIE.png') no-repeat;
+}
+
+.clickmap {
+	display: none;
+}
+.featured-columns [class*="span"] {
+	
+}
+.featured-columns img {
+	
+	display:block;
+	height: 99px;
+	width: 379px;
+	
+}
+.featured-columns .innershadow {
+width: 379px;
+
+}
+
+.btn-white {
+	
+	
+	width:130px;
+	height:22px;
+	backgound-size:190px 44px;
+	background:url('background/button-white.png') no-repeat;
+	
+}
+.btn-white:hover {
+	background:url('background/button-white.png') no-repeat;
+	
+}
