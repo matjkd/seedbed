@@ -33,11 +33,11 @@
 		{
 			if ($feetonly == 1)
 			{
-				$total = $feet . " sq.ft ";
+				$total = $feet;
 			}
 			else
 			{
-				$total = $feet . "ft " . $inches . "ins <sup>2</sup>";
+				$total = $feet;
 			}
 		}
 
@@ -55,9 +55,9 @@
 					<?php
 
 						$area_m = ($row -> width) * ($row -> length);
-						$area_f = convert_to_inches($area_m, 1);
+						$area_f = convert_to_inches($row -> width, 1) * convert_to_inches($row -> length, 1);
 					?>
-<p class="lead">Size: <?=$area_f ?> (<?=round($area_m, 0) ?>m<sup>2</sup>) </p>
+<p class="lead">Size: <?=$row -> sqft ?> sq.ft (<?=round($area_m, 0) ?>m<sup>2</sup>) </p>
 
 
 </div>

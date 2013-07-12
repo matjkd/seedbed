@@ -44,12 +44,12 @@ function convert_to_inches($meters) {
 					<?php 
 					
 					$area_m = ($row->width)*($row->length); 
-					$area_f = convert_to_inches($area_m); 
+					$area_f = convert_to_inches($row->width)*convert_to_inches($row->length); 
 					
 					?>
 					<tr>
 					<td><?=$row->block[0].$row->number?></td>  
-					<td><?=$area_f?> sq.ft. (<?=round($area_m,0)?>m<sup>2</sup>) </td>
+					<td><?=$row->sqft?> sq.ft. (<?=round($area_m,0)?>m<sup>2</sup>) </td>
 					
 					<td>
 						
