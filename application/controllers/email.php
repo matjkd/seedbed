@@ -100,7 +100,7 @@ $unit = $this->input->post('unit');
 	
 	
 	
-	$to = "mat@redstudio.co.uk";
+	$to = "info@seedbedloughton.com";
 	$this->send_email($subject, $message, $to);
 	
 	$this->session->set_flashdata('message', 'Your message has been sent. Thank you.');
