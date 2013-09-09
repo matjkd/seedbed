@@ -49,7 +49,7 @@ class Login extends MY_Controller {
 
             $this->session->set_userdata($data);
             $this->session->set_flashdata('message', "welcome.");
-            redirect('welcome/login', 'refresh');
+            redirect('admin', 'refresh');
         } else { // incorrect username or password
             $this->session->set_flashdata('message', "login failed!!.");
             redirect('welcome/login', 'refresh');

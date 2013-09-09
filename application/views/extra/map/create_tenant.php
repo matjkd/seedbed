@@ -1,4 +1,6 @@
-<?=form_open('admin/create_tenant')?>
+<div style="background: #fff;
+padding: 10px; display:block; ">
+	<?=form_open('admin/create_tenant')?>
 <p>
 <?=form_label('Tenant Name')?>
 	<?=form_input('tenant_name')?>
@@ -23,3 +25,5 @@
 
 
 <?=$this->load->view('admin/dashboard')?>
+
+</div>

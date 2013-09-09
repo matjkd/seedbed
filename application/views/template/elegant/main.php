@@ -369,7 +369,7 @@ I commented and separeated the html so you can apply it to your site/menu system
 				<ul class="clearfix">
 						<li>© 2013 EFI (Loughton) Limited. All rights reserved.</li>
 						<li><a href="http://www.redstudio.co.uk">Developed by Redstudio Design Limited</a></li>
-						
+						<li><a href="<?=base_url()?>admin">Admin</a></li>
 				</ul>
 		</div>
 		<!--close footer-credits container--> 

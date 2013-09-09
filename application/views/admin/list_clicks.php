@@ -1,7 +1,7 @@
 
 
 
-<table id="datatable">
+<table id="datatable" style="background:#fff">
 <thead>
 <tr>
 <th>

@@ -9,7 +9,7 @@
 
 Tenant Name: <br/><?=form_input('tenant_name', $row->tenant_name)?><br/>
 Website:<br/><?=form_input('website', $row->website)?>
-Email:<br/><?=form_input('email', $row->email)?>
+<br/>Email:<br/><?=form_input('email', $row->email)?>
 <p>
 <?=form_label('Visible')?>
 	<?=form_checkbox('visible',  1, $row->visible)?>

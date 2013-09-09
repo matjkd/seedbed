@@ -5,7 +5,7 @@
 		#effect h4 { margin: 0; padding: 0; text-align: left; }
 		.ui-effects-transfer { border: 2px dotted gray; } 
 	</style>
-<div id="effect" class="ui-widget-content ui-corner-all">
+<div id="effect" class="ui-widget-content ui-corner-all well" style="background:#fff; padding:10px;">
 <h4 class="ui-widget-header ui-corner-all">Login Form</h4>
 <?php 
 
