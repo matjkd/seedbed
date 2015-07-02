@@ -91,13 +91,7 @@
 <td>Level 2</td><td class="written_field" style="width: 78%">&nbsp;</td>
 </tr>
 
-<tr>
-<td>Level 3</td><td class="written_field" style="width: 78%">&nbsp;</td>
-</tr>
 
-<tr>
-<td>Level 4</td><td class="written_field" style="width: 78%">&nbsp;</td>
-</tr>
 
 <tr>
 <td>Action for Faxes:</td><td class="written_field" style="width: 78%">&nbsp;</td>
