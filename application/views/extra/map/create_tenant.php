@@ -7,7 +7,7 @@ padding: 10px; display:block; ">
 
 </p>
 <p>
-<?=form_label('Website')?>
+<?=form_label('Websdite')?>
 	<?=form_input('website')?>
 
 </p>
