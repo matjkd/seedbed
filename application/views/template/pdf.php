@@ -1869,7 +1869,7 @@ Essex, IG10 3TQ
 <td style="text-align: right;">
 Tel No: 020 8787 7000<br/>
 Fax No: 020 8787 7003<br/>
-Email: tina@seedbedloughton.com
+Email: info@seedbedloughton.com
 </td>
 
 

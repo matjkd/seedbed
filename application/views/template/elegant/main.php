@@ -300,7 +300,7 @@ I commented and separeated the html so you can apply it to your site/menu system
 										<h4>Contact Us</h4>
 										<p>
 												The Loughton Seedbed Centre<br>
-												Langstone Road,<br>
+												Langston Road,<br>
 												Loughton<br>
 												Essex, IG10 3TQ<br>
 												<strong>phone:</strong> <a href="tel:02087877000" class="tele">020 8787 7000</a><br>

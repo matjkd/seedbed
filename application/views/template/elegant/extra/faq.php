@@ -41,7 +41,7 @@
 		<div id="collapseThree" class="accordion-body collapse">
 			<div class="accordion-inner">
 				<p>
-					<strong>Answer:</strong> Tenants are responsible for their own busiess rates although many of the units may qualify for Small
+					<strong>Answer:</strong> Tenants are responsible for their own business rates although many of the units may qualify for Small
 					 Business Rates Relief. Please contact Epping Forest District Council for clarification.
 				</p>
 			</div>
