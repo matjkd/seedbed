@@ -68,16 +68,16 @@
     
     
     <div class="ablockContainer">     
-      <a href="#myModal"  data-toggle="modal"><div class="A ablock shield clickmap"  id="a1"><div class="clickthrough" >A1</div></div></a>
-     <a href="#myModal"  data-toggle="modal"><div class="A ablock shield clickmap"  id="a2"><div class="clickthrough" >A2</div></div></a>
+      <a href="#myModal"  data-toggle="modal"><div class="A ablock shield clickmap"  id="a4"><div class="clickthrough" >A4</div></div></a>
      <a href="#myModal"  data-toggle="modal"><div class="A ablock shield clickmap"  id="a3"><div class="clickthrough" >A3</div></div></a>
-     <a href="#myModal"  data-toggle="modal"><div class="A ablock shield clickmap"  id="a4"><div class="clickthrough" >A4</div></div></a>
+     <a href="#myModal"  data-toggle="modal"><div class="A ablock shield clickmap"  id="a2"><div class="clickthrough" >A2</div></div></a>
+     <a href="#myModal"  data-toggle="modal"><div class="A ablock shield clickmap"  id="a1"><div class="clickthrough" >A1</div></div></a>
    </div>
    
     <div class="cblockContainer">     
-       <a href="#myModal"  data-toggle="modal"><div class="C  cblock shield clickmap"  id="c1"><div class="clickthrough" >C1</div></div></a>
+       <a href="#myModal"  data-toggle="modal"><div class="C  cblock shield clickmap"  id="c3"><div class="clickthrough" >C3</div></div></a>
     <a href="#myModal"  data-toggle="modal"> <div class="C  cblock shield clickmap"  id="c2"><div class="clickthrough" >C2</div></div></a>
-     <a href="#myModal"  data-toggle="modal"><div class="C  cblock shield clickmap"  id="c3"><div class="clickthrough" >C3</div></div></a>
+     <a href="#myModal"  data-toggle="modal"><div class="C  cblock shield clickmap"  id="c1"><div class="clickthrough" >C1</div></div></a>
 </div>
 </div>
 
