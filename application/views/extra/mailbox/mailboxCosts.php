@@ -14,7 +14,7 @@
     <div class="price two columns alpha omega" >  
         <div style="padding:10px;">
 
-            £45.00 per month + VAT
+            £40.00 per month + VAT
 
         </div>
     </div>
