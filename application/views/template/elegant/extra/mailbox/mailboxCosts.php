@@ -8,8 +8,8 @@
 			<div class="option1 span6">
 				<div class="wrapper">
 					<ul class="optionheader">
-						<li class="title primary-color-bg"> Level 1 </li>
-						<li class="price primary-color-bg"> <i>£</i>45.00 <span>per month + VAT </span></li>
+						<li class="title primary-color-bg"> Mailbox </li>
+						<li class="price primary-color-bg"> <i>£</i>40.00 <span>per month + VAT </span></li>
 					</ul>
 					<div class="featureP">
 						<p>Accomodation address only<br/>
@@ -26,11 +26,11 @@
 			<div class="option2 span6 last">
 				<div class="wrapper">
 					<ul class="optionheader">
-						<li class="title primary-color-bg"> Level 2 </li>
-						<li class="price primary-color-bg"> <i>£</i>85.00 <span>per month + VAT </span></li>
+						<li class="title primary-color-bg"> Telephone Answering </li>
+						<li class="price primary-color-bg"> <i>£</i>68.00 <span>per month + VAT </span></li>
 					</ul>
 					<div class="featureP">
-						<p><strong>As level 1 plus</strong> <br/>
+						<p>
 						Telephone Answering service 
 						 with dedicated telephone line<br/>
 						 Calls answered as 

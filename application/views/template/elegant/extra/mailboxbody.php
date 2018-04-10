@@ -6,7 +6,7 @@
 			<p>
 				<ol>
 					<li>
-						All messages taken are £0.25 per message.
+						All messages taken are 30p per message.
 					</li>
 					<li>
 						If the messages are phoned through, the customer is then charged for the price of the call.
@@ -20,9 +20,9 @@
 			
 			<h3>Refundable Deposits</h3>
 			<p>
-				Level 1 £150.00 deposit is required.
+				Mailbox £80 deposit is required.
 				<br/>
-				Level 2 £250.00 deposit is required.
+				Telephone £136 deposit is required.
 				<br/>
 				
 
